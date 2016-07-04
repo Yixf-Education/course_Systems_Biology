@@ -1,7 +1,7 @@
 \input{snippet/beamer_head}
 \input{snippet/class_head}
 
-\includeonlyframes{current}
+% \includeonlyframes{current}
 
 \title[概论]{第一章\quad 系统生物学概论}
 \author[Yixf]{伊现富（Yi Xianfu）}
@@ -10,11 +10,11 @@
 
 %\input{snippet/class_info}
 
-\begin{frame}[label=current]
+\begin{frame}
   \titlepage
 \end{frame}
 
-\begin{frame}[plain,label=current]
+\begin{frame}[plain]
   \frametitle{教学提纲}
   \setcounter{tocdepth}{3}
   \begin{multicols}{2}
@@ -24,6 +24,7 @@
 
 
 \section{咬文嚼字}
+\subsection{组分拆分}
 \begin{frame}
   \frametitle{概论 | 咬文嚼字 | 系统生物学}
   \begin{huge}
@@ -33,7 +34,8 @@
   \end{huge}
 \end{frame}
 
-\begin{frame}
+\subsection{组分分析}
+\begin{frame}[t]
   \frametitle{概论 | 咬文嚼字 | 系统}
   \begin{block}{系统}
     系统（system）泛指由一群有关联的个体组成，根据某种规则运作，能完成个别元件不能单独完成的工作的群体。\\
@@ -42,11 +44,11 @@
   \pause
   \begin{figure}
     \centering
-    \includegraphics[width=3.5cm]{c1.introduction.system.01.jpg}\qquad
-    \includegraphics[width=2.5cm]{c1.introduction.system.02.png}\\
-    \includegraphics[width=3.5cm]{c1.introduction.system.03.jpg}\quad
-    \includegraphics[width=3.2cm]{c1.introduction.system.04.jpg}\quad
-    \includegraphics[width=3.2cm]{c1.introduction.system.05.jpg}
+    \only<2->{\includegraphics[width=3.5cm]{c1.introduction.system.01.jpg}}\qquad
+    \only<3->{\includegraphics[width=2.5cm]{c1.introduction.system.02.png}}\\
+    \only<4->{\includegraphics[width=3.5cm]{c1.introduction.system.03.jpg}}\quad
+    \only<5->{\includegraphics[width=3.2cm]{c1.introduction.system.04.jpg}}\quad
+    \only<6->{\includegraphics[width=3.2cm]{c1.introduction.system.05.jpg}}
   \end{figure}
 \end{frame}
 
@@ -61,17 +63,16 @@
   \end{block}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
   \frametitle{概论 | 咬文嚼字 | 生物}
   \begin{block}{生物}
     生物（organism，又称有机体）是指称类生命的个体，其最重要和基本的特征在于生物进行新陈代谢及遗传。\\
 生物以细胞作为生命的基本单位，基因作为遗传的基本单元，进化是推动新物种的合成和创建的引擎。所有生物体的生存以消耗和转换能量，调节体内环境以维持稳定和重要的生命条件。
   \end{block}
-  \pause
   \begin{figure}
     \centering
-    \includegraphics[width=4.5cm]{c1.introduction.organism.01.jpg}\qquad
-    \includegraphics[width=4cm]{c1.introduction.organism.02.png}
+    \only<2->{\includegraphics[width=4.5cm]{c1.introduction.organism.01.jpg}}\qquad
+    \only<2->{\includegraphics[width=4cm]{c1.introduction.organism.02.png}}
   \end{figure}
 \end{frame}
 
@@ -82,7 +83,6 @@
     \vspace{1em}
 人们习惯根据研究对象的不同把科学划分为不同的类别，传统的自然科学主要有生物学、物理学、化学、地质学和天文学。逻辑学和数学的地位比较特殊，它们是其它一切科学的论证基础和工具。
   \end{block}
-  \pause
   \begin{figure}
     \centering
     \includegraphics[width=10cm]{c1.introduction.science.01.png}
@@ -95,6 +95,16 @@
 科学活动所得的知识是条件明确的（不能模棱两可或随意解读）、能经得起检验的，而且不能与任何适用范围内的已知事实产生矛盾。科学原仅指对自然现象之规律的探索与总结，但人文学科也被越来越多地冠以“科学”之名。\\
     \vspace{1em}
 科学在认识自然的不同层面上设法解决各种具体的问题，强调预测结果的具体性和\textcolor{red}{可证伪性}，这有别于空泛的哲学。\textcolor{red}{科学也不等同于寻求绝对无误的真理}，而是在现有基础上，摸索式地不断接近真理。故科学的发展史就是一部人类对自然界的认识偏差的纠正史。因此\textcolor{red}{“科学”本身要求对理论要保持一定的怀疑性}，因此它\textcolor{red}{绝不是“正确”的同义词}。
+  \end{block}
+\end{frame}
+
+\subsection{组分合成}
+\begin{frame}
+  \frametitle{概论 | 咬文嚼字 | 系统科学}
+  \begin{block}{系统科学}
+系统指的是由相互联系、相互作用的要素（或部分）组成的具有一定结构和功能的有机整体；准确来说，要素+结构=系统。\\
+\vspace{1em}
+从系统的角度观察研究客观世界的学科，就是系统科学。它研究的领域横跨自然科学，社会科学，却除去其中较为狭窄的物理、生物、心理、经济意义，而把研究重心放在探究各个系统的本质规律上。系统科学主要研究系统的要素（或元素），结构，和系统的行为（性质）。 
   \end{block}
 \end{frame}
 
@@ -138,16 +148,25 @@
   \end{figure}
 \end{frame}
 
+\subsection{从组分到整体}
 \begin{frame}
-  \frametitle{概论 | 咬文嚼字 | 系统科学}
-  \begin{block}{系统科学}
-系统指的是由相互联系、相互作用的要素（或部分）组成的具有一定结构和功能的有机整体；准确来说，要素+结构=系统。\\
-\vspace{1em}
-从系统的角度观察研究客观世界的学科，就是系统科学。它研究的领域横跨自然科学，社会科学，却除去其中较为狭窄的物理、生物、心理、经济意义，而把研究重心放在探究各个系统的本质规律上。系统科学主要研究系统的要素（或元素），结构，和系统的行为（性质）。 
-  \end{block}
+  \frametitle{概论 | 咬文嚼字 | 系统生物学}
+  \begin{huge}
+  \begin{center}
+    \pause
+    系统 \quad + \quad 科学 \quad = \quad 系统科学\\  
+    \vspace{1em}
+    \pause
+    生物 \quad + \quad 科学 \quad = \quad 生物\textcolor{gray}{科}学\\ 
+    \vspace{1em}
+    \pause
+    系统科学 \ + \ 生物\textcolor{gray}{科}学 \ = \ 系统生物学
+  \end{center}
+  \end{huge}
 \end{frame}
 
 \section{方法论}
+\subsection{还原论}
 \begin{frame}
   \frametitle{概论 | 方法论 | 还原论}
   \begin{block}{还原论}
@@ -204,11 +223,12 @@
   \frametitle{概论 | 方法论 | 基因决定论}
   \begin{figure}
     \centering
-    \includegraphics[width=0.4\textwidth]{c1.introduction.gene.determinism.01.jpg}\qquad
-    \includegraphics[width=0.42\textwidth]{c1.introduction.epigenetics.01.jpg}
+    \only<2->{\includegraphics[width=0.4\textwidth]{c1.introduction.gene.determinism.01.jpg}}\qquad
+    \only<3->{\includegraphics[width=0.42\textwidth]{c1.introduction.epigenetics.01.jpg}}
   \end{figure}
 \end{frame}
 
+\subsection{整体论}
 \begin{frame}
   \frametitle{概论 | 方法论 | 系统论}
   \begin{block}{系统论}
@@ -238,6 +258,7 @@
   \end{figure}
 \end{frame}
 
+\subsection{还原论 vs. 整体论}
 \begin{frame}
   \frametitle{概论 | 方法论 | 还原论 vs. 整体论}
 还原论常常被视为对立于整全观。科学上的还原论的主张为：在一个复杂系统里，组成部分的行为可以解释整体系统的表现。18至20世纪流行于科学家之间的哲学逻辑实证论，其中一个信念就是科学研究是阶层式的：物理→化学→生物学→心理学→社会科学，化学的法则可以用物理学解释，生物学的法则可以用化学去解释。\\
@@ -257,10 +278,10 @@
   \frametitle{概论 | 方法论 | 补遗}
   \begin{figure}
     \centering
-    \includegraphics[width=0.4\textwidth]{c1.introduction.nonscience.01.jpg}\qquad
-    \includegraphics[width=0.3\textwidth]{c1.introduction.liro.01.png}\\
+    \only<1->{\includegraphics[width=0.4\textwidth]{c1.introduction.nonscience.01.jpg}}\qquad
+    \only<2->{\includegraphics[width=0.3\textwidth]{c1.introduction.liro.01.png}}\\
     \vspace{1em}
-    \includegraphics[width=0.4\textwidth]{c1.introduction.liro.10.png}
+    \only<3->{\includegraphics[width=0.4\textwidth]{c1.introduction.liro.10.png}}
   \end{figure}
 \end{frame}
 
@@ -320,8 +341,26 @@
 \subsection{学科定义}
 \begin{frame}
   \frametitle{概论 | 系统生物学 | 定义}
+  \begin{block}{莱诺伊·胡德，2001}
+系统生物学是将DNA、RNA、蛋白质以及三者彼此之间的交互作用等资讯加以整合，并运用这些资料去建立出数学计量模型，以期能掌握所有生物基因与组织间的关系及运作。\\
+\vspace{1em}
+系统生物学的研究过程是先取得一个生物、组织或细胞系统，辨识出各种内部因素，在获得DNA、RNA及蛋白质相互作用及资讯网络方面整合所获得的资讯，然后开发出能描述系统结构和行为的数学模型，最后可以借由此一个模型系统，使这个系统可以自动执行所需的功能。\\
+\vspace{1em}
+系统生物学是结合许多不同学科的领域，透过彼此相互的网状合作，针对一个生物现象所进行的研究。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{概论 | 系统生物学 | 定义}
   \begin{block}{Hood，2004}
 系统生物学是研究一个生物系统中所有组成成分（基因、mRNA、蛋白质等）的构成，以及在特定条件下这些组分间的相互关系，并通过计算生物学建立一个数学模型来定量描述和预测生物功能、表型和行为的学科。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{概论 | 系统生物学 | 定义}
+  \begin{block}{北野宏明}
+系统生物学的研究可以包含四大部分，分别利用资讯科学、分析、技术、基因组学四者形成环型而连续的关系，建立出一个新的研究模式，并且利用这一模式所发展的一系列的工具来解决生物学家所面临的研究问题。
   \end{block}
 \end{frame}
 
@@ -362,24 +401,6 @@
 系统生物学是对生物体整个过程做一全面性的定量研究，并非以生物体的某一部分为对象。目的是要建立模式并以实验来证实其可预测的生物体的表现。\\
 \vspace{1em}
 简单的说，这样的研究方法就是利用资讯科学及微机电工程的技术来研究生物学的问题，最后并希望能够利用电脑运算的结果，来预测细胞、器官、系统甚至完整生物体的表现。
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{概论 | 系统生物学 | 定义}
-  \begin{block}{莱诺伊·胡德，2001}
-系统生物学是将DNA、RNA、蛋白质以及三者彼此之间的交互作用等资讯加以整合，并运用这些资料去建立出数学计量模型，以期能掌握所有生物基因与组织间的关系及运作。\\
-\vspace{1em}
-系统生物学的研究过程是先取得一个生物、组织或细胞系统，辨识出各种内部因素，在获得DNA、RNA及蛋白质相互作用及资讯网络方面整合所获得的资讯，然后开发出能描述系统结构和行为的数学模型，最后可以借由此一个模型系统，使这个系统可以自动执行所需的功能。\\
-\vspace{1em}
-系统生物学是结合许多不同学科的领域，透过彼此相互的网状合作，针对一个生物现象所进行的研究。
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{概论 | 系统生物学 | 定义}
-  \begin{block}{北野宏明}
-系统生物学的研究可以包含四大部分，分别利用资讯科学、分析、技术、基因组学四者形成环型而连续的关系，建立出一个新的研究模式，并且利用这一模式所发展的一系列的工具来解决生物学家所面临的研究问题。
   \end{block}
 \end{frame}
 
@@ -441,7 +462,7 @@
     \column{0.65\textwidth}
   \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{c1.introduction.sb.workflow.01.jpg}
+    \only<2->{\includegraphics[width=0.8\textwidth]{c1.introduction.sb.workflow.01.jpg}}
   \end{figure}
   \end{columns}
 \end{frame}
@@ -475,6 +496,22 @@
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c1.introduction.sb.workflow.05.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{概论 | 系统生物学 | 流程}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c1.introduction.sb.workflow.06.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{概论 | 系统生物学 | 流程}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{c1.introduction.sb.workflow.07.png}
   \end{figure}
 \end{frame}
 
@@ -522,8 +559,75 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}[label=current]
-  \frametitle{概论 | 系统生物学 | 方法 | 建模和模拟}
+\begin{frame}
+  \frametitle{概论 | 系统生物学 | 方法 | 建模和模拟 | 建模}
+  \begin{block}{研究系统的目的}
+了解系统各个组成部分之间的关系，预测系统在另一些新情况下的执行情况
+  \end{block}
+  \pause
+  \begin{block}{局限性}
+许多系统不具有实际试验的可能性
+  \end{block}
+  \pause
+  \begin{block}{解决办法}
+按实际系统建立系统模型，然后利用模型试验研究的结果来推断实际系统过工作
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{概论 | 系统生物学 | 方法 | 建模和模拟 | 建模}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c1.introduction.sb.model.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{概论 | 系统生物学 | 方法 | 建模和模拟 | 模拟}
+  \begin{block}{系统模拟}
+系统模拟又称为系统仿真，是根据被研究的真实系统的模型，利用计算机进行实验研究的一种方法，它通过模型在计算机上的运行来对模型进行检验和修正，使模型不断趋于完美的进程。  
+  \end{block}
+  \pause
+  \begin{block}{解决两个问题}
+    \begin{itemize}
+      \item 提供计算机能接受的仿真模型
+      \item 提供在计算机上运行计算和进行仿真研究的方法
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{block}{包括三个要素}
+      系统、模型、计算机
+  \end{block}
+  \pause
+  \begin{block}{三个基本活动}
+     系统模型建立、仿真模型建立、仿真实验
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{概论 | 系统生物学 | 方法 | 建模和模拟 | 模拟}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.55\textwidth]{c1.introduction.sb.simulation.01.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{概论 | 系统生物学 | 方法 | 建模和模拟 | 模拟}
+  \begin{block}{优势}
+    \begin{itemize}
+      \item 可以求解许多复杂而无法用数学手段解析求解的问题
+      \item 可以预测或再现系统的运动规律或运动过程
+      \item 可以对无法直接进行实验的系统进行仿真实验研究
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{block}{缺陷}
+    \begin{itemize}
+      \item 忽略系统的次要因素及不可检测变量
+      \item 实际系统的简化近似模型
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 \subsection{应用前景}
@@ -567,12 +671,16 @@
   \frametitle{概论 | 总结}
   \begin{block}{知识点}
     \begin{itemize}
-      \item 
+      \item 系统生物学的基本定义。
+      \item 系统生物学的研究内容。
+      \item 系统生物学的工作流程。
+      \item 系统生物学的研究方法。
     \end{itemize}
   \end{block}
   \begin{block}{技能}
     \begin{itemize}
-      \item 
+      \item 各种方法论在系统生物学中的应用。
+      \item 各种方法论在实际中的应用。
     \end{itemize}
   \end{block}
 \end{frame}
@@ -581,20 +689,19 @@
 \begin{frame}
   \frametitle{概论 | 思考题}
   \begin{enumerate}
-    \item 
+    \item 根据自己的理解说明什么是系统生物学。
+    \item 描述系统生物学的基本工作流程和研究内容。
+    \item 解释系统生物学研究方法中的“自上而下”和“自下而上”。
   \end{enumerate}
 \end{frame}
 
 \begin{frame}
   \frametitle{下节预告}
-  \begin{block}{普遍问题}
-  \end{block}
-  \pause
-  \begin{block}{具体问题}
-  \end{block}
-  \pause
-  \begin{block}{解答提示}
-  \end{block}
+  \begin{itemize}
+    \item 回顾人类基因组计划。
+    \item 解释Sanger测序法的基本原理。
+    \item 总结生物信息学中常见的数据格式。
+  \end{itemize}
 \end{frame}
 
 
