@@ -32,7 +32,7 @@ RNA测序则通常将RNA提取后，反转录为DNA后使用DNA测序的方法�
   \frametitle{基因组学 | 测序 | 第一代 | 化学测序法}
   \begin{figure}
     \centering
-    \includegraphics[width=0.48\textwidth]{c2.genomics.sequencing.mg.01.png}
+    \includegraphics[width=0.48\textwidth]{c2.genomics/sequencing.mg.01.png}
   \end{figure}
 \end{frame}
 
@@ -76,7 +76,7 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
   \frametitle{基因组学 | 测序 | 第一代 | 桑格测序法}
   \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{c2.genomics.sequencing.sanger.01.png}
+    \includegraphics[width=0.6\textwidth]{c2.genomics/sequencing.sanger.01.png}
   \end{figure}
 \end{frame}
 
@@ -84,7 +84,7 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
   \frametitle{基因组学 | 测序 | 第一代 | 桑格测序法}
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics.sequencing.sanger.04.jpg}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.sanger.04.jpg}
   \end{figure}
 \end{frame}
 
@@ -106,11 +106,29 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
+  \begin{block}{焦磷酸测序}
+焦磷酸测序（pyrosequencing）是一种基于聚合原理的DNA测序方法，它依赖于核苷酸掺入中焦磷酸盐的释放，而非双脱氧核苷三磷酸参与的链终止反应。\\
+\vspace{1em}
+Pyrosequencing技术是由4种酶催化的同一反应体系中的酶级联化学发光反应。在每一轮测序中，只加入一种dNTP，若该dNTP与模板配对，聚合酶就可以将其掺入到引物链中并释放出等摩尔数的焦磷酸基团(PPi)。PPi可最终转化为可见光信号，并由PyrogramTM转化为一个峰值。每个峰值的高度与反应中掺入的核苷酸数目成正比。然后加入下一种dNTP，继续DNA链的合成。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
+  \begin{block}{emPCR}
+emPCR主要通过将水相PCR溶液(包含引物、聚合酶、核苷酸和待扩增DNA)与油混合，创建一种微小的悬浮水滴乳液。每个液滴都作为其自身PCR的“反应器”，从而创造了平行反应中的多个独立反应。\\
+\vspace{1em}
+emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反应的微反应器，进行PCR扩增。emPCR最大的特点是可以形成数目庞大的独立反应空间以进行PCR扩增。其关键技术是“注水到油”，基本过程是在PCR反应前，将包含PCR所需反应成分的水溶液注入到高速旋转的油相表面，水溶液瞬间形成数以万计个被油相包裹的小液滴。这些小液滴就形成了PCR反应空间。
+  \end{block}
+\end{frame}
+
 % \begin{frame}
 %   \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
 %   \begin{figure}
 %     \centering
-%     \includegraphics[width=0.7\textwidth]{c2.genomics.sequencing.pyro.01.jpg}
+%     \includegraphics[width=0.7\textwidth]{c2.genomics/sequencing.pyro.01.jpg}
 %   \end{figure}
 % \end{frame}
 
@@ -118,7 +136,7 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
   \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics.sequencing.pyro.02.jpg}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.pyro.02.jpg}
   \end{figure}
 \end{frame}
 
@@ -126,27 +144,70 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
   \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics.sequencing.pyro.06.jpg}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.454.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \begin{block}{边合成边测序}
+边合成边测序（Sequencing by Synthesis，SBS）：以DNA单链为模板，在合成互补链的时候，利用带荧光标记的dNTP发出不同的荧光来确定碱基类型。
+  \end{block}
+  \pause
+  \begin{block}{桥式扩增}
+桥式扩增（Bridge Amplification）：随机打断的单链DNA片段通过两端接头与寡核苷酸的互补固定在芯片表面，形成桥形结构，之后以寡核苷酸为引物进行PCR扩增，得到单克隆的DNA簇群。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.bridge.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{c2.genomics/sequencing.bridge.02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.sbs.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.59\textwidth]{c2.genomics/sequencing.sbs.04.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.82\textwidth]{c2.genomics/sequencing.ill.05.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.52\textwidth]{c2.genomics/sequencing.ill.01.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
-\end{frame}
-
-\begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
-\end{frame}
-
-\begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
-\end{frame}
-
-\begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
-\end{frame}
-
-\begin{frame}[label=current]
   \frametitle{基因组学 | 测序 | 第二代 | 边连接边测序}
 \end{frame}
 
@@ -160,6 +221,14 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
 
 \begin{frame}[label=current]
   \frametitle{基因组学 | 测序 | 第二代 | 边连接边测序}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | 总结}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.ngs.01.jpg}
+  \end{figure}
 \end{frame}
 
 \subsection{第三代测序技术}
@@ -200,7 +269,7 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
   \frametitle{基因组学 | 测序 | 比较}
   \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{c2.genomics.sequencing.compare.01.png}
+    \includegraphics[width=\textwidth]{c2.genomics/sequencing.compare.01.png}
   \end{figure}
 \end{frame}
 
@@ -208,7 +277,7 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
   \frametitle{基因组学 | 测序 | 比较}
   \begin{figure}
     \centering
-    \includegraphics[width=0.85\textwidth]{c2.genomics.sequencing.compare.02.png}
+    \includegraphics[width=0.85\textwidth]{c2.genomics/sequencing.compare.02.png}
   \end{figure}
 \end{frame}
 
