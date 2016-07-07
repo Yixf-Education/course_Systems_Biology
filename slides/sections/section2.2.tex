@@ -305,8 +305,8 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
-  \begin{block}{概述（有误）}
-测序引物与接头可以互补杂交，其5'端可与和邻近序列互补的寡核苷酸相连。八聚体寡核苷酸可竞争性与引物相连接（该寡聚体的第四位和第五位为荧光标记位点）。当其标记颜色被读取后，即将连接上的寡核苷酸在第五位和第六位之间切断，以移除标记，进行下一轮反应，以此依次循环。在第一轮反应中，可以得到确定的碱基位点为：4、5、9、10、14、15位碱基等。重复该反应过程，偏移一位碱基，使用较第一轮少一个碱基的引物进行反应，可以确定的碱基位点包括：3、4、8、9、13、14等，如此往复，直至偏移至引物的第一个碱基（即待测序列0位点碱基）。由于该位点碱基已知，可通过读取的荧光颜色得知位点1的碱基类型，然后，又以位点1碱基荧光颜色推知位点2的碱基类型，依此类推，直至整个序列读序完成。  
+  \begin{block}{概述}
+SOLiD连接反应的底物是8碱基单链荧光探针混合物（3'-XXnnnzzz-5'），其中第1和第2位碱基（XX）上的碱基是确定的，并根据种类的不同在6-8位（zzz）上加上CY5、Texas Red、CY3、6-FAM四种不同的荧光标记。这是SOLiD的独特测序法，两个碱基确定一个荧光信号，相当于一次能决定两个碱基，因此也称为两碱基测序法。当荧光探针能够与DNA模板链配对而连接上时，就会发出代表第1、2位碱基的荧光信号。在记录下荧光信号后，通过化学方法在第5和第6位碱基之间进行切割，这样就能移除荧光信号，以便进行下一个位置的测序。这种测序方法每次测序的位置都相差5位：即第一次是第1、2位，第二次是第6、7位……在测到末尾后，要将新合成的链变性，洗脱。接着用引物n-1进行第二轮测序。引物n-1与引物n的区别是，二者在与接头配对的位置上相差一个碱基。也即是，通过引物n-1在引物n的基础上将测序位置往3'端移动一个碱基位置，因而就能测定第0、1位和第5、6位……第二轮测序完成，依此类推，直至第五轮测序，最终可以完成所有位置的碱基测序，并且每个位置的碱基均被检测了两次。
   \end{block}
 \end{frame}
 
@@ -374,6 +374,53 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
+  \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
+  \begin{block}{概述}
+    Ion Torrent（Ion semiconductor sequencing）是一种基于半导体芯片的新一代革命性测序技术，通过检测H+信号的变化来获得序列碱基信息。该技术使用了一种布满小孔的高密度半导体芯片，一个小孔就是一个测序反应池。当DNA聚合酶把核苷酸聚合到延伸中的DNA链上时，会释放出一个氢离子，反应池中的pH发生改变，位于池下的离子感受器感受到H+离子信号，H+离子信号再直接转化为数字信号，从而读出DNA序列。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
+  \begin{block}{优缺点}
+Ion Torrent相比于其他测序技术来说，不需要昂贵的物理成像等设备，因此，成本相对来说会低，体积也会比较小，同时操作也要更为简单，速度也相当快速，除了2天文库制作时间，整个上机测序可在2-3.5小时内完成，不过整个芯片的通量并不高，目前是10G左右，但非常适合小基因组和外显子验证的测序。  
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.ion.01.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.ion.02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{c2.genomics/sequencing.ion.03.png}
+  \end{figure}
+\end{frame}
+
+% \begin{frame}
+%   \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
+%   \begin{figure}
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{c2.genomics/sequencing.ion.04.png}
+%   \end{figure}
+% \end{frame}
+
+
+\begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | 总结}
   \begin{figure}
     \centering
@@ -382,36 +429,102 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \subsection{第三代测序技术}
-\begin{frame}[label=current]
+\begin{frame}
   \frametitle{基因组学 | 测序 | 第三代 | 简介}
+  \begin{block}{单分子测序}
+测序过程无需进行PCR扩增。 
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第三代 | SMRT}
+  \begin{block}{概述}
+PacBio SMRT（Single molecule real time sequencing）技术也应用了边合成边测序的思想，并以SMRT芯片为测序载体。基本原理是：DNA聚合酶和模板结合，4色荧光标记4种碱基（即是dNTP），在碱基配对阶段，不同碱基的加入，会发出不同光，根据光的波长与峰值可判断进入的碱基类型。\\
+\vspace{1em}
+DNA聚合酶是实现超长读长的关键之一，读长主要跟酶的活性保持有关，它主要受激光对其造成的损伤所影响。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第三代 | SMRT}
+  \begin{block}{概述}
+    PacBio SMRT技术的一个关键是怎样将反应信号与周围游离碱基的强大荧光背景区别出来。它们利用的是ZMW（零模波导孔）原理，如同微波炉壁上可看到的很多密集小孔。小孔直径有考究，如果直径大于微波波长，能量就会在衍射效应的作用下穿透面板而泄露出来，从而与周围小孔相互干扰。如果孔径小于波长，能量不会辐射到周围，而是保持直线状态（光衍射的原理），从而可起保护作用。同理，在一个反应管（SMRT Cell:单分子实时反应孔）中有许多这样的圆形纳米小孔，即ZMW（零模波导孔），外径100多纳米，比检测激光波长小（数百纳米），激光从底部打上去后不能穿透小孔进入上方溶液区，能量被限制在一个小范围（体积$20 \times 10^{-21}L$ ）里，正好足够覆盖需要检测的部分，使得信号仅来自这个小反应区域，孔外过多游离核苷酸单体依然留在黑暗中，从而实现将背景降到最低。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第三代 | SMRT}
+  \begin{block}{优缺点}
+可以通过检测相邻两个碱基之间的测序时间，来检测一些碱基修饰情况，既如果碱基存在修饰，则通过聚合酶时的速度会减慢，相邻两峰之间的距离增大，可以通过这个来之间检测甲基化等信息。\\
+\vspace{1em}
+SMRT技术的测序速度很快，每秒约10个dNTP。\\
+\vspace{1em}
+SMRT技术的测序错误率比较高（这几乎是目前单分子测序技术的通病），达到15\%，但好在它的出错是随机的，并不会像第二代测序技术那样存在测序错误的偏向，因而可以通过多次测序来进行有效的纠错。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第三代 | SMRT}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.smrt.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第三代 | SMRT}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.smrt.03.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第三代 | 纳米孔单分子测序}
+  \begin{block}{概述}
+Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nanopore sequencing）与以往的测序技术皆不同，是基于电信号而不是光信号的测序技术。该技术的关键之一是，它们设计了一种特殊的纳米孔，孔内共价结合有分子接头。当DNA碱基通过纳米孔时，它们使电荷发生变化，从而短暂地影响流过纳米孔的电流强度（每种碱基所影响的电流变化幅度是不同的），灵敏的电子设备检测到这些变化从而鉴定所通过的碱基。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第三代 | 纳米孔单分子测序}
+  \begin{block}{优缺点}
+纳米孔测序的主要特点是：读长很长，大约在几十kb，甚至100kb；错误率目前介于1\%至4\%，且是随机错误，而不是聚集在读取的两端；数据可实时读取；通量很高（30x人类基因组有望在一天内完成）；起始DNA在测序过程中不被破坏；样品制备简单又便宜。理论上，它也能直接测序RNA。\\
+\vspace{1em}
+纳米孔单分子测序还有另一大特点，它能够直接读取出甲基化的胞嘧啶，而不必像传统方法那样对基因组进行bisulfite处理。这对于在基因组水平直接研究表观遗传相关现象有极大的帮助。并且该方法的测序准确性可达99.8\%，而且一旦发现测序错误也能较容易地进行纠正。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第三代 | 纳米孔单分子测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{c2.genomics/sequencing.nano.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第三代 | 纳米孔单分子测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/sequencing.nano.02.jpg}
+  \end{figure}
 \end{frame}
 
 \begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第三代 | 离子半导体}
+  \frametitle{基因组学 | 测序 | 第三代 | 单分子测序}
 \end{frame}
 
 \begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第三代 | 离子半导体}
+  \frametitle{基因组学 | 测序 | 第三代 | 单分子测序}
 \end{frame}
 
 \begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第三代 | 离子半导体}
+  \frametitle{基因组学 | 测序 | 第三代 | 单分子测序}
 \end{frame}
 
 \begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第三代 | 单分子实时测序}
-\end{frame}
-
-\begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第三代 | 单分子实时测序}
-\end{frame}
-
-\begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第三代 | 单分子实时测序}
-\end{frame}
-
-\begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第三代 | 单分子实时测序}
+  \frametitle{基因组学 | 测序 | 第三代 | 单分子测序}
 \end{frame}
 
 \subsection{测序技术比较}
@@ -438,3 +551,20 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
     \includegraphics[width=0.85\textwidth]{c2.genomics/sequencing.compare.03.jpg}
   \end{figure}
 \end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 比较}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{c2.genomics/sequencing.compare.04.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 比较}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{c2.genomics/sequencing.compare.05.png}
+  \end{figure}
+\end{frame}
+
