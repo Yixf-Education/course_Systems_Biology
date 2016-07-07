@@ -10,12 +10,36 @@ RNA测序则通常将RNA提取后，反转录为DNA后使用DNA测序的方法�
   \end{block}
 \end{frame}
 
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 历史}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{c2.genomics/sequencing.history.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 历史}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.timeline.01.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 历史}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.timeline.02.png}
+  \end{figure}
+\end{frame}
+
 \subsection{第一代测序技术}
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第一代 | 简介}
    \begin{itemize}
-     \item 1975年，弗雷德里克·桑格和艾伦·库尔森（Alan Coulson），“加减测序法技术”；改进后为链终止法（chain termination method），即桑格测序法
-     \item 1977年，哈佛大学的沃尔特·吉尔伯特和艾伦·马克萨姆（Allan Maxam），马克萨姆-吉尔伯特测序（Maxam-Gilbert法，又称化学测序法）
+     \item 1975年，弗雷德里克·桑格（Frederick Sanger）和艾伦·库尔森（Alan Coulson），“加减测序法技术”；改进后为链终止法（chain termination method），即桑格测序法
+     \item 1977年，哈佛大学的沃尔特·吉尔伯特（Walter Gilbert）和艾伦·马克萨姆（Allan Maxam），链降解，马克萨姆-吉尔伯特测序（Maxam-Gilbert法，又称化学测序法）
    \end{itemize} 
 \end{frame}
 
@@ -54,11 +78,18 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
 
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第一代 | 桑格测序法}
+  \begin{block}{概述}
+每个反应含有所有四种脱氧核苷酸三磷酸(dNTP)使之扩增，并混入限量的一种不同的双脱氧核苷三磷酸(ddNTP)使之终止。由于ddNTP缺乏延伸所需要的3'-OH基团，使延长的寡聚核苷酸选择性地在G、A、T或C处终止，终止点由反应中相应的双脱氧而定。每一种dNTPs和ddNTPs的相对浓度可以调整，使反应得到一组长几个至千以上个、相差一个碱基的一系列片断。它们具有共同的起始点，但终止在不同的核苷酸上，可通过高分辨率变性凝胶电泳分离大小不同的片段，凝胶处理后可用X-光胶片放射自显影或非同位素标记进行检测。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第一代 | 桑格测序法}
   \begin{block}{优势}
     \begin{itemize}
       \item 最长可测定600-1000bp的DNA片断
       \item 对重复序列和多聚序列的处理较好
-      \item 序列准确性高
+      \item 序列准确性高，高达99.999\%
       \item 测序的“黄金标准”
     \end{itemize}
   \end{block}
@@ -89,25 +120,32 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
 \end{frame}
 
 \subsection{第二代测序技术}
-\begin{frame}[label=current]
+\begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | 简介}
+  \begin{block}{Roche公司的454技术}
   \begin{itemize}
     \item 1996年，波尔·尼伦和穆斯塔法·罗纳吉，焦磷酸测序（Pyrosequencing）
-    \item 2004年，454生命科学公司（现为Roche诊断公司的一部分），第一台商品化新一代测序仪——基因组测序仪20
-    \item 2006年12月，454生命科学公司，第二代仪器——基因组测序仪FLX（GS FLX）
+    \item 2004/2005年，商业化测序仪
+    \item 2009年，百万条、200-400bp
   \end{itemize}
+  \end{block}
   \pause
+  \begin{block}{Illumina公司的Solexa技术}
   \begin{itemize}
-    \item 
+    \item 2006年，商业化测序仪
+    \item 2009年，上亿条、50-100bp
   \end{itemize}
+  \end{block}
   \pause
+  \begin{block}{ABI公司的SOLiD技术}
   \begin{itemize}
-    \item 
+    \item 2006/2007年，商业化测序仪
   \end{itemize}
+  \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
   \begin{block}{焦磷酸测序}
 焦磷酸测序（pyrosequencing）是一种基于聚合原理的DNA测序方法，它依赖于核苷酸掺入中焦磷酸盐的释放，而非双脱氧核苷三磷酸参与的链终止反应。\\
 \vspace{1em}
@@ -116,16 +154,23 @@ Pyrosequencing技术是由4种酶催化的同一反应体系中的酶级联化�
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
   \begin{block}{emPCR}
-emPCR主要通过将水相PCR溶液(包含引物、聚合酶、核苷酸和待扩增DNA)与油混合，创建一种微小的悬浮水滴乳液。每个液滴都作为其自身PCR的“反应器”，从而创造了平行反应中的多个独立反应。\\
+emPCR（乳液PCR）主要通过将水相PCR溶液(包含引物、聚合酶、核苷酸和待扩增DNA)与油混合，创建一种微小的悬浮水滴乳液。每个液滴都作为其自身PCR的“反应器”，从而创造了平行反应中的多个独立反应。\\
 \vspace{1em}
 emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反应的微反应器，进行PCR扩增。emPCR最大的特点是可以形成数目庞大的独立反应空间以进行PCR扩增。其关键技术是“注水到油”，基本过程是在PCR反应前，将包含PCR所需反应成分的水溶液注入到高速旋转的油相表面，水溶液瞬间形成数以万计个被油相包裹的小液滴。这些小液滴就形成了PCR反应空间。
   \end{block}
 \end{frame}
 
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
+  \begin{block}{概述}
+在测序时，使用了一种叫做“Pico TiterPlate”（PTP）的平板，它含有160多万个由光纤组成的孔，孔中载有化学发光反应所需的各种酶和底物。测序开始时，放置在四个单独的试剂瓶里的四种碱基，依照T、A、C、G的顺序依次循环进入PTP板，每次只进入一个碱基。如果发生碱基配对，就会释放一个焦磷酸。这个焦磷酸在各种酶的作用下，经过一个合成反应和一个化学发光反应，最终将荧光素氧化成氧化荧光素，同时释放出光信号。此反应释放出的光信号实时被仪器配置的高灵敏度CCD捕获到。有一个碱基和测序模板进行配对，就会捕获到一分子的光信号；由此一一对应，就可以准确、快速地确定待测模板的碱基序列。
+  \end{block}
+\end{frame}
+
 % \begin{frame}
-%   \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
+%   \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
 %   \begin{figure}
 %     \centering
 %     \includegraphics[width=0.7\textwidth]{c2.genomics/sequencing.pyro.01.jpg}
@@ -133,7 +178,7 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 % \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.pyro.02.jpg}
@@ -141,7 +186,7 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.454.01.jpg}
@@ -149,7 +194,26 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
+  \begin{block}{优点}
+    \begin{itemize}
+      \item 读长长，使得后继的序列拼接工作更加高效、准确
+      \item 速度快，一个测序反应耗时10个小时，获得4-6亿个碱基对
+      \item 特别适合从头拼接和宏基因组学应用，多用于新的细菌基因组
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{block}{缺点}
+    \begin{itemize}
+      \item 无法准确测量同聚物的长度，所以检测插入缺失突变的误差率高
+      \item 通量小且费用高
+      \item 对重测序来说太贵，不适合
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | Illumina/Solexa}
   \begin{block}{边合成边测序}
 边合成边测序（Sequencing by Synthesis，SBS）：以DNA单链为模板，在合成互补链的时候，利用带荧光标记的dNTP发出不同的荧光来确定碱基类型。
   \end{block}
@@ -160,7 +224,14 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Illumina/Solexa}
+  \begin{block}{概述}
+这种测序技术通过将基因组DNA的随机片断附着到光学透明的表面，这些DNA片断通过延长和桥梁扩增，形成了具有数以亿计cluster的Flowcell，每个cluster具有约1000拷贝的相同DNA模板，然后用4种末端被封闭的不同荧光标记的碱基进行边合成边测序。这种新方法确保了高精确度和真实的一个碱基接一个碱基的测序，排除了序列方面的特殊错误，能够测序同聚物和重复序列。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | Illumina/Solexa}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.bridge.01.jpg}
@@ -168,7 +239,7 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Illumina/Solexa}
   \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{c2.genomics/sequencing.bridge.02.png}
@@ -176,7 +247,7 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Illumina/Solexa}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.sbs.01.jpg}
@@ -184,7 +255,7 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Illumina/Solexa}
   \begin{figure}
     \centering
     \includegraphics[width=0.59\textwidth]{c2.genomics/sequencing.sbs.04.jpg}
@@ -192,7 +263,7 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Illumina/Solexa}
   \begin{figure}
     \centering
     \includegraphics[width=0.82\textwidth]{c2.genomics/sequencing.ill.05.jpg}
@@ -200,34 +271,113 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 边合成边测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Illumina/Solexa}
   \begin{figure}
     \centering
     \includegraphics[width=0.52\textwidth]{c2.genomics/sequencing.ill.01.png}
   \end{figure}
 \end{frame}
 
-\begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第二代 | 边连接边测序}
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | Illumina/Solexa}
+  \begin{block}{优点}
+    \begin{itemize}
+      \item 通量大
+      \item 测序方式灵活
+      \item 分析软件多样化
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{block}{缺点}
+    \begin{itemize}
+      \item 样本制备过程复杂
+      \item 样本要求相对较高
+    \end{itemize}
+  \end{block}
 \end{frame}
 
-\begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第二代 | 边连接边测序}
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+  \begin{block}{边连接边测序}
+边连接边测序（Sequencing by ligation），基于连接酶法，即利用DNA连接酶在连接过程之中测序。  
+  \end{block}
 \end{frame}
 
-\begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第二代 | 边连接边测序}
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+  \begin{block}{概述（有误）}
+测序引物与接头可以互补杂交，其5'端可与和邻近序列互补的寡核苷酸相连。八聚体寡核苷酸可竞争性与引物相连接（该寡聚体的第四位和第五位为荧光标记位点）。当其标记颜色被读取后，即将连接上的寡核苷酸在第五位和第六位之间切断，以移除标记，进行下一轮反应，以此依次循环。在第一轮反应中，可以得到确定的碱基位点为：4、5、9、10、14、15位碱基等。重复该反应过程，偏移一位碱基，使用较第一轮少一个碱基的引物进行反应，可以确定的碱基位点包括：3、4、8、9、13、14等，如此往复，直至偏移至引物的第一个碱基（即待测序列0位点碱基）。由于该位点碱基已知，可通过读取的荧光颜色得知位点1的碱基类型，然后，又以位点1碱基荧光颜色推知位点2的碱基类型，依此类推，直至整个序列读序完成。  
+  \end{block}
 \end{frame}
 
-\begin{frame}[label=current]
-  \frametitle{基因组学 | 测序 | 第二代 | 边连接边测序}
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{c2.genomics/sequencing.sbl.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.sbl.02.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.48\textwidth]{c2.genomics/sequencing.sbl.03.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.48\textwidth]{c2.genomics/sequencing.solid.02.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.62\textwidth]{c2.genomics/sequencing.sbl.04.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.38\textwidth]{c2.genomics/sequencing.solid.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+  \begin{block}{优点}
+    \begin{itemize}
+      \item 高准确性，每个DNA碱基检测2次，增加了序列读取的准确性
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{block}{缺点}
+    \begin{itemize}
+      \item 运行时间长，检测碱基替换突变的误差率高
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | 总结}
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.ngs.01.jpg}
+    \includegraphics[width=0.88\textwidth]{c2.genomics/sequencing.ngs.01.jpg}
   \end{figure}
 \end{frame}
 
@@ -281,3 +431,10 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
   \end{figure}
 \end{frame}
 
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 比较}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{c2.genomics/sequencing.compare.03.jpg}
+  \end{figure}
+\end{frame}
