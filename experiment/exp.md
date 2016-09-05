@@ -80,6 +80,7 @@
 		* 思考：
 			- 比较去除adapter前后的FastQC输出报告。
 			- 不去除adapter的话对后续的处理有没有影响？
+6. 探索"NGS: QC and manipulation"中的其他工具
 
 ## 参考资料
 * [FastQC Help](http://www.bioinformatics.bbsrc.ac.uk/projects/fastqc/Help/)
