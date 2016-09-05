@@ -203,10 +203,18 @@ Sanger（桑格）双脱氧链终止法是弗雷德里克·桑格（Frederick Sa
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{Roche/454}}
   \begin{block}{焦磷酸测序}
-焦磷酸测序（pyrosequencing）是一种基于聚合原理的DNA测序方法，它依赖于核苷酸掺入中焦磷酸盐的释放，而非双脱氧核苷三磷酸参与的链终止反应。\\
+焦磷酸测序（pyrosequencing）是一种基于聚合原理的DNA测序方法，它依赖于核苷酸掺入中焦磷酸盐的释放，而非双脱氧三磷酸核苷酸参与的链终止反应。\\
 \vspace{1em}
 Pyrosequencing技术是由4种酶催化的同一反应体系中的酶级联化学发光反应。在每一轮测序中，只加入一种dNTP，若该dNTP与模板配对，聚合酶就可以将其掺入到引物链中并释放出等摩尔数的焦磷酸基团(PPi)。PPi可最终转化为可见光信号，并由PyrogramTM转化为一个峰值。每个峰值的高度与反应中掺入的核苷酸数目成正比。然后加入下一种dNTP，继续DNA链的合成。
   \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.pyro.02.jpg}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
@@ -232,14 +240,6 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 %     \includegraphics[width=0.7\textwidth]{c2.genomics/sequencing.pyro.01.jpg}
 %   \end{figure}
 % \end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.pyro.02.jpg}
-  \end{figure}
-\end{frame}
 
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
@@ -271,18 +271,11 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{Illumina/Solexa}}
   \begin{block}{边合成边测序}
-边合成边测序（Sequencing by Synthesis，SBS）：以DNA单链为模板，在合成互补链的时候，利用带荧光标记的dNTP发出不同的荧光来确定碱基类型。
+边合成边测序（sequencing by synthesis，SBS）：以DNA单链为模板，在合成互补链的时候，利用带荧光标记的dNTP发出不同的荧光来确定碱基类型。
   \end{block}
   \pause
   \begin{block}{桥式扩增}
-桥式扩增（Bridge Amplification）：随机打断的单链DNA片段通过两端接头与寡核苷酸的互补固定在芯片表面，形成桥形结构，之后以寡核苷酸为引物进行PCR扩增，得到单克隆的DNA簇群。
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{Illumina/Solexa}}
-  \begin{block}{概述}
-这种测序技术通过将基因组DNA的随机片断附着到光学透明的表面，这些DNA片断通过延长和桥梁扩增，形成了具有数以亿计cluster的Flowcell，每个cluster具有约1000拷贝的相同DNA模板，然后用4种末端被封闭的不同荧光标记的碱基进行边合成边测序。这种新方法确保了高精确度和真实的一个碱基接一个碱基的测序，排除了序列方面的特殊错误，能够测序同聚物和重复序列。
+桥式扩增（bridge amplification）：随机打断的单链DNA片段通过两端接头与寡核苷酸的互补固定在芯片表面，形成桥形结构，之后以寡核苷酸为引物进行PCR扩增，得到单克隆的DNA簇群。
   \end{block}
 \end{frame}
 
@@ -292,6 +285,13 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.bridge.01.jpg}
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{Illumina/Solexa}}
+  \begin{block}{概述}
+这种测序技术通过将基因组DNA的随机片断附着到光学透明的表面，这些DNA片断通过延长和桥梁扩增，形成了具有数以亿计cluster的Flowcell，每个cluster具有约1000拷贝的相同DNA模板，然后用4种末端被封闭的不同荧光标记的碱基进行边合成边测序。这种新方法确保了高精确度和真实的一个碱基接一个碱基的测序，排除了序列方面的特殊错误，能够测序同聚物和重复序列。
+  \end{block}
 \end{frame}
 
 \begin{frame}
@@ -355,7 +355,7 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{ABI/SOLiD}}
   \begin{block}{边连接边测序}
-边连接边测序（Sequencing by ligation），基于连接酶法，即利用DNA连接酶在连接过程之中测序。  
+边连接边测序（sequencing by ligation），基于连接酶法，即利用DNA连接酶在连接过程之中测序。  
   \end{block}
 \end{frame}
 
@@ -504,7 +504,7 @@ Ion Torrent的化学测序原理自然简单，无修饰的核苷酸、无激光
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第三代 | tSMS}
   \begin{block}{优缺点}
-真正的单分子测序，无需前期扩增，不引入偏向性；特别适合RNA-Seq或RNA直接测序的应用，因为它能直接测序RNA模板，而无需将其转化成cDNA。检测碱基替换突变的误差率非常低，~0.2\%。\\
+真正的单分子测序，无需前期扩增，不引入偏向性；特别适合RNA-Seq或RNA直接测序的应用，因为它能直接测序RNA模板，而无需将其转化成cDNA。检测碱基替换突变的误差率非常低，～0.2\%。\\
 \vspace{1em}
 缺点: 错误率高，Insertion 1.5\%，Deletion 3.0\%；Heliscope在面对同聚物时也会遇到一些困难，但可以通过二次测序提高准确度；由于在合成中可能掺有未标记的碱基，因此其最主要的错误来源是缺失。
   \end{block}
@@ -529,7 +529,9 @@ Ion Torrent的化学测序原理自然简单，无修饰的核苷酸、无激光
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第三代 | SMRT}
   \begin{block}{概述}
-PacBio SMRT（Single molecule real time sequencing）技术也应用了边合成边测序的思想，并以SMRT芯片为测序载体。基本原理是：DNA聚合酶和模板结合，4色荧光标记4种碱基（即是dNTP），在碱基配对阶段，不同碱基的加入，会发出不同光，根据光的波长与峰值可判断进入的碱基类型。\\
+PacBio SMRT（single molecule real time sequencing）技术也应用了边合成边测序的思想，并以SMRT芯片为测序载体。\\
+\vspace{1em}
+基本原理是：DNA聚合酶和模板结合，4色荧光标记4种碱基（即是dNTP），在碱基配对阶段，不同碱基的加入，会发出不同光，根据光的波长与峰值可判断进入的碱基类型。\\
 \vspace{1em}
 DNA聚合酶是实现超长读长的关键之一，读长主要跟酶的活性保持有关，它主要受激光对其造成的损伤所影响。
   \end{block}
@@ -538,14 +540,14 @@ DNA聚合酶是实现超长读长的关键之一，读长主要跟酶的活性�
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第三代 | SMRT}
   \begin{block}{概述}
-    PacBio SMRT技术的一个关键是怎样将反应信号与周围游离碱基的强大荧光背景区别出来。它们利用的是ZMW（Zero Mode Waveguide，零模波导孔）原理，如同微波炉壁上可看到的很多密集小孔。小孔直径有考究，如果直径大于微波波长，能量就会在衍射效应的作用下穿透面板而泄露出来，从而与周围小孔相互干扰。如果孔径小于波长，能量不会辐射到周围，而是保持直线状态（光衍射的原理），从而可起保护作用。同理，在一个反应管（SMRT Cell:单分子实时反应孔）中有许多这样的圆形纳米小孔，即ZMW（零模波导孔），外径100多纳米，比检测激光波长小（数百纳米），激光从底部打上去后不能穿透小孔进入上方溶液区，能量被限制在一个小范围（体积$20 \times 10^{-21}L$ ）里，正好足够覆盖需要检测的部分，使得信号仅来自这个小反应区域，孔外过多游离核苷酸单体依然留在黑暗中，从而实现将背景降到最低。
+    PacBio SMRT技术的一个关键是怎样将反应信号与周围游离碱基的强大荧光背景区别出来。它们利用的是ZMW（Zero Mode Waveguide，零模波导孔）原理，如同微波炉壁上可看到的很多密集小孔。小孔直径有考究，如果直径大于微波波长，能量就会在衍射效应的作用下穿透面板而泄露出来，从而与周围小孔相互干扰。如果孔径小于波长，能量不会辐射到周围，而是保持直线状态（光衍射的原理），从而可起保护作用。同理，在一个反应管（SMRT Cell，单分子实时反应孔）中有许多这样的圆形纳米小孔，即ZMW（零模波导孔），外径100多纳米，比检测激光波长小（数百纳米），激光从底部打上去后不能穿透小孔进入上方溶液区，能量被限制在一个小范围（体积$20 \times 10^{-21}L$ ）里，正好足够覆盖需要检测的部分，使得信号仅来自这个小反应区域，孔外过多游离核苷酸单体依然留在黑暗中，从而实现将背景降到最低。
   \end{block}
 \end{frame}
 
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第三代 | SMRT}
   \begin{block}{优缺点}
-可以通过检测相邻两个碱基之间的测序时间，来检测一些碱基修饰情况，既如果碱基存在修饰，则通过聚合酶时的速度会减慢，相邻两峰之间的距离增大，可以通过这个来之间检测甲基化等信息。\\
+可以通过检测相邻两个碱基之间的测序时间，来检测一些碱基修饰情况，既如果碱基存在修饰，则通过聚合酶时的速度会减慢，相邻两峰之间的距离增大，可以通过这个来直接检测甲基化等信息。\\
 \vspace{1em}
 SMRT技术的测序速度很快，每秒约10个dNTP。读长长。无需PCR扩增，也避免了由此带来的bias。需要的样品量很少，样品制备时间花费少。通量灵活，时间快。可以远程快速获取数据和选择测序参数。\\
 \vspace{1em}
@@ -572,7 +574,9 @@ SMRT技术的测序错误率比较高（这几乎是目前单分子测序技术�
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第三代 | FRET}
   \begin{block}{概述}
-VisiGen基于荧光共振能量转移（FRET，Fluorescence Resonance Energy Transfer）的DNA测序技术。将标记了荧光供体基团的DNA聚合酶分子固定在载玻片上；再加含模板、引物、四种dNTP（其磷酸上标记特异的荧光受体基团）的测序缓冲液。测序延伸反应开始，带荧光受体基团的dNTP靠近含荧光供体基团的聚合酶，使后者释放能量，激发前者发出特异的荧光（即FRET信号），从而识别相应的碱基序列。当dNTP被加上后，荧光基团随磷酸离开，保证下一个dNTP能继续被加上。
+VisiGen基于荧光共振能量转移（FRET，Fluorescence Resonance Energy Transfer）的DNA测序技术。将标记了荧光供体基团的DNA聚合酶分子固定在载玻片上；再加含模板、引物、四种dNTP（其磷酸上标记特异的荧光受体基团）的测序缓冲液。\\
+\vspace{1em}
+测序延伸反应开始，带荧光受体基团的dNTP靠近含荧光供体基团的聚合酶，使后者释放能量，激发前者发出特异的荧光（即FRET信号），从而识别相应的碱基序列。当dNTP被加上后，荧光基团随磷酸离开，保证下一个dNTP能继续被加上。
   \end{block}
 \end{frame}
 
@@ -594,9 +598,9 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第三代 | 纳米孔测序}
   \begin{block}{优缺点}
-纳米孔测序的主要特点是：读长很长，大约在几十kb，甚至100kb；错误率目前介于1\%至4\%，且是随机错误，而不是聚集在读取的两端；数据可实时读取；通量很高（30x人类基因组有望在一天内完成）；起始DNA在测序过程中不被破坏；样品制备简单又便宜。理论上，它也能直接测序RNA。\\
+纳米孔测序的主要特点是：读长很长，大约在几十kb，甚至100kb；错误率目前介于1\%至4\%，且是随机错误，而不是聚集在读段的两端；数据可实时读取；通量很高（30x人类基因组有望在一天内完成）；起始DNA在测序过程中不被破坏；样品制备简单又便宜。理论上，它也能直接测序RNA。\\
 \vspace{1em}
-纳米孔单分子测序还有另一大特点，它能够直接读取出甲基化的胞嘧啶，而不必像传统方法那样对基因组进行bisulfite处理。这对于在基因组水平直接研究表观遗传相关现象有极大的帮助。并且该方法的测序准确性可达99.8\%，而且一旦发现测序错误也能较容易地进行纠正。
+纳米孔单分子测序还有另外一大特点，它能够直接读取出甲基化的胞嘧啶，而不必像传统方法那样对基因组进行bisulfite处理。这对于在基因组水平直接研究表观遗传相关现象有极大的帮助。并且该方法的测序准确性可达99.8\%，而且一旦发现测序错误也能较容易地进行纠正。
   \end{block}
 \end{frame}
 
@@ -632,7 +636,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第三代 | SMRT,Nanopore}
+  \frametitle{基因组学 | 测序 | 第三代 | SMRT, Nanopore}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.smrt.nano.02.png}
@@ -640,7 +644,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第三代 | SMRT,Nanopore}
+  \frametitle{基因组学 | 测序 | 第三代 | SMRT, Nanopore}
   \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{c2.genomics/sequencing.smrt.nano.03.png}
@@ -648,7 +652,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第三代 | FRET,SMRT,SMS}
+  \frametitle{基因组学 | 测序 | 第三代 | FRET, SMRT, SMS}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.fret.smrt.sms.01.jpg}
@@ -656,7 +660,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第三代 | SMS,SMRT,FRET}
+  \frametitle{基因组学 | 测序 | 第三代 | SMS, SMRT, FRET}
   \begin{figure}
     \centering
     \includegraphics[width=0.55\textwidth]{c2.genomics/sequencing.sms.smrt.fret.01.jpg}
@@ -664,7 +668,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第三代 | SMRT,FRET,Nanopore,Ion}
+  \frametitle{基因组学 | 测序 | 第三代 | SMRT, FRET, Nanopore, Ion}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/sequencing.smrt.fret.nano.ion.01.png}
@@ -701,6 +705,14 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/sequencing.compare.06.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 比较}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/sequencing.compare.11.png}
   \end{figure}
 \end{frame}
 
