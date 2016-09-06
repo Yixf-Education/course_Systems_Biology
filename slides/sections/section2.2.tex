@@ -227,6 +227,16 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.36\textwidth]{c2.genomics/sequencing.empcr.01.jpg}
+    \qquad
+    \includegraphics[angle=270,origin=r,width=0.18\textwidth]{c2.genomics/sequencing.empcr.05.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{Roche/454}}
   \begin{block}{概述}
 在测序时，使用了一种叫做“Pico TiterPlate”（PTP）的平板，它含有160多万个由光纤组成的孔，孔中载有化学发光反应所需的各种酶和底物。测序开始时，放置在四个单独的试剂瓶里的四种碱基，依照T、A、C、G的顺序依次循环进入PTP板，每次只进入一个碱基。如果发生碱基配对，就会释放一个焦磷酸。这个焦磷酸在各种酶的作用下，经过一个合成反应和一个化学发光反应，最终将荧光素氧化成氧化荧光素，同时释放出光信号。此反应释放出的光信号实时被仪器配置的高灵敏度CCD捕获到。有一个碱基和测序模板进行配对，就会捕获到一分子的光信号；由此一一对应，就可以准确、快速地确定待测模板的碱基序列。
@@ -250,7 +260,7 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | 焦磷酸测序}
+  \frametitle{基因组学 | 测序 | 第二代 | Roche/454}
   \begin{block}{优点}
     \begin{itemize}
       \item 读长长，使得后继的序列拼接工作更加高效、准确
@@ -270,10 +280,6 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{Illumina/Solexa}}
-  \begin{block}{边合成边测序}
-边合成边测序（sequencing by synthesis，SBS）：以DNA单链为模板，在合成互补链的时候，利用带荧光标记的dNTP发出不同的荧光来确定碱基类型。
-  \end{block}
-  \pause
   \begin{block}{桥式扩增}
 桥式扩增（bridge amplification）：随机打断的单链DNA片段通过两端接头与寡核苷酸的互补固定在芯片表面，形成桥形结构，之后以寡核苷酸为引物进行PCR扩增，得到单克隆的DNA簇群。
   \end{block}
@@ -288,18 +294,18 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{Illumina/Solexa}}
-  \begin{block}{概述}
-这种测序技术通过将基因组DNA的随机片断附着到光学透明的表面，这些DNA片断通过延长和桥梁扩增，形成了具有数以亿计cluster的Flowcell，每个cluster具有约1000拷贝的相同DNA模板，然后用4种末端被封闭的不同荧光标记的碱基进行边合成边测序。这种新方法确保了高精确度和真实的一个碱基接一个碱基的测序，排除了序列方面的特殊错误，能够测序同聚物和重复序列。
-  \end{block}
-\end{frame}
-
-\begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | Illumina/Solexa}
   \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{c2.genomics/sequencing.bridge.02.png}
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{Illumina/Solexa}}
+  \begin{block}{边合成边测序}
+边合成边测序（sequencing by synthesis，SBS）：以DNA单链为模板，在合成互补链的时候，利用带荧光标记的dNTP发出不同的荧光来确定碱基类型。
+  \end{block}
 \end{frame}
 
 \begin{frame}
@@ -316,6 +322,13 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
     \centering
     \includegraphics[width=0.59\textwidth]{c2.genomics/sequencing.sbs.04.jpg}
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{Illumina/Solexa}}
+  \begin{block}{概述}
+这种测序技术通过将基因组DNA的随机片断附着到光学透明的表面，这些DNA片断通过延长和桥梁扩增，形成了具有数以亿计cluster的Flowcell，每个cluster具有约1000拷贝的相同DNA模板，然后用4种末端被封闭的不同荧光标记的碱基进行边合成边测序。这种新方法确保了高精确度和真实的一个碱基接一个碱基的测序，排除了序列方面的特殊错误，能够测序同聚物和重复序列。
+  \end{block}
 \end{frame}
 
 \begin{frame}
@@ -360,6 +373,14 @@ emPCR（emulsion PCR）技术利用油包水（water-in-oil）结构作为PCR反
 \end{frame}
 
 \begin{frame}
+  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{c2.genomics/sequencing.sbl.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | \textcolor{red}{ABI/SOLiD}}
   \begin{block}{概述}
 SOLiD连接反应的底物是8碱基单链荧光探针混合物（3'-XXnnnzzz-5'），其中第1和第2位碱基（XX）上的碱基是确定的，并根据种类的不同在6-8位（zzz）上加上CY5、Texas Red、CY3、6-FAM四种不同的荧光标记。这是SOLiD的独特测序法，两个碱基确定一个荧光信号，相当于一次能决定两个碱基，因此也称为两碱基测序法。当荧光探针能够与DNA模板链配对而连接上时，就会发出代表第1、2位碱基的荧光信号。在记录下荧光信号后，通过化学方法在第5和第6位碱基之间进行切割，这样就能移除荧光信号，以便进行下一个位置的测序。这种测序方法每次测序的位置都相差5位：即第一次是第1、2位，第二次是第6、7位……在测到末尾后，要将新合成的链变性，洗脱。接着用引物n-1进行第二轮测序。引物n-1与引物n的区别是，二者在与接头配对的位置上相差一个碱基。也即是，通过引物n-1在引物n的基础上将测序位置往3'端移动一个碱基位置，因而就能测定第0、1位和第5、6位……第二轮测序完成，依此类推，直至第五轮测序，最终可以完成所有位置的碱基测序，并且每个位置的碱基均被检测了两次。
@@ -370,25 +391,17 @@ SOLiD连接反应的底物是8碱基单链荧光探针混合物（3'-XXnnnzzz-5'
   \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
   \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{c2.genomics/sequencing.sbl.01.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
-  \begin{figure}
-    \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.sbl.02.jpg}
   \end{figure}
 \end{frame}
 
-\begin{frame}
-  \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.48\textwidth]{c2.genomics/sequencing.sbl.03.jpg}
-  \end{figure}
-\end{frame}
+% \begin{frame}
+%   \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
+%   \begin{figure}
+%     \centering
+%     \includegraphics[width=0.48\textwidth]{c2.genomics/sequencing.sbl.03.jpg}
+%   \end{figure}
+% \end{frame}
 
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第二代 | ABI/SOLiD}
@@ -438,26 +451,25 @@ SOLiD连接反应的底物是8碱基单链荧光探针混合物（3'-XXnnnzzz-5'
 
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
-  \begin{block}{优缺点}
-Ion Torrent相比于其他测序技术来说，不需要昂贵的物理成像等设备，因此，成本相对来说会低，体积也会比较小，同时操作也要更为简单，速度也相当快速，除了2天文库制作时间，整个上机测序可在2-3.5小时内完成，不过整个芯片的通量并不高，目前是10G左右，但非常适合小基因组和外显子验证的测序。\\
-\vspace{1em}
-Ion Torrent的化学测序原理自然简单，无修饰的核苷酸、无激光器或光学检测设备，因而可达到极小的测序偏差和出色的测序覆盖均衡度。
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.ion.01.png}
   \end{figure}
 \end{frame}
 
+% \begin{frame}
+%   \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
+%   \begin{figure}
+%     \centering
+%     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.ion.02.png}
+%   \end{figure}
+% \end{frame}
+
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.ion.02.png}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.ion.07.jpg}
   \end{figure}
 \end{frame}
 
@@ -467,6 +479,23 @@ Ion Torrent的化学测序原理自然简单，无修饰的核苷酸、无激光
     \centering
     \includegraphics[width=0.7\textwidth]{c2.genomics/sequencing.ion.03.png}
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{c2.genomics/sequencing.ion.08.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 第2.5代 | 离子半导体测序}
+  \begin{block}{优缺点}
+Ion Torrent相比于其他测序技术来说，不需要昂贵的物理成像等设备，因此，成本相对来说会低，体积也会比较小，同时操作也要更为简单，速度也相当快速，除了2天文库制作时间，整个上机测序可在2-3.5小时内完成，不过整个芯片的通量并不高，目前是10G左右，但非常适合小基因组和外显子验证的测序。\\
+\vspace{1em}
+Ion Torrent的化学测序原理自然简单，无修饰的核苷酸、无激光器或光学检测设备，因而可达到极小的测序偏差和出色的测序覆盖均衡度。
+  \end{block}
 \end{frame}
 
 % \begin{frame}
