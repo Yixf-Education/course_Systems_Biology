@@ -42,4 +42,5 @@
 
 * [RNA-seq Analysis Exercise](https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise)
 
+* [Cam RNA-Seq Day 1](https://test.galaxyproject.org/u/galaxyproject/h/cam-rna-seq-day-1)
 
