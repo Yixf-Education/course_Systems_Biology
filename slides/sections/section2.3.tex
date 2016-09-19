@@ -1,369 +1,727 @@
-\section{外显子组测序}
-\subsection{简介}
+\section{数据库与数据格式}
+\subsection{数据库}
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | \textcolor{red}{Exome}}
-  The exome is the part of the genome formed by exons, the sequences which when transcribed remain within the mature RNA after introns are removed by RNA splicing. It consists of all DNA that is transcribed into mature RNA in cells of any type as distinct from the transcriptome, which is the RNA that has been transcribed only in a specific cell population.
+  \frametitle{基因组学 | 测序 | 数据库 | \textcolor{red}{SRA}}
+  \begin{block}{SRA}
+NCBI在2007年底推出了SRA数据库，专门用于存储、显示、提取和分析高通量测序数据。\\
+\vspace{1em}
+SRA数据库，最初的命名为Short Read Archive，现已改为Sequence Read Archive。\\
+\vspace{1em}
+Sequence Read Archive (SRA) makes biological sequence data available to the research community to enhance reproducibility and allow for new discoveries by comparing data sets. The SRA stores raw sequencing data and alignment information from high-throughput sequencing platforms, including Roche 454 GS System®, Illumina Genome Analyzer®, Applied Biosystems SOLiD System®, Helicos Heliscope®, Complete Genomics®, and Pacific Biosciences SMRT®. 
+  \end{block}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | SRA}
   \begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{c2.genomics/exome.01.png}
+    \includegraphics[width=0.7\textwidth]{c2.genomics/db.sra.05.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | \textcolor{red}{Exome}}
-  The exome of the human genome consists of roughly 180,000 exons constituting about 1\% of the total genome, or about 30 megabases of DNA. Though comprising a very small fraction of the genome, mutations in the exome are thought to harbor 85\% of mutations that have a large effect on disease.
+  \frametitle{基因组学 | 测序 | 数据库 | SRA}
   \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{c2.genomics/exome.02.jpg}
+    \includegraphics[width=\textwidth]{c2.genomics/db.sra.01.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | SRA}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{c2.genomics/db.sra.02.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | SRA}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/db.sra.03.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | SRA}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/db.sra.04.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | \textcolor{red}{GEO}}
+  \begin{block}{GEO}
+NCBI的GEO（Gene Expression Omnibus）数据库是一个非常强大的高通量数据集合，它综合了大量的芯片数据和二代测序数据，供全球科研工作者免费使用。\\
+\vspace{1em}
+NCBI的GEO数据库用于存储高通量的芯片实验数据，在SRA未建立之前，GEO数据库也用于存储高通量测序数据。\\
+\vspace{1em}
+GEO is a public functional genomics data repository supporting MIAME-compliant data submissions. Array- and sequence-based data are accepted. Tools are provided to help users query and download experiments and curated gene expression profiles.
+  \end{block}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | GEO}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/db.geo.01.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | GEO}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{c2.genomics/db.geo.02.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing}
-  \begin{block}{\textcolor{red}{WES}}
-  Exome sequencing, also known as whole exome sequencing (WES or WXS), is a technique for sequencing all the expressed genes in a genome (known as the exome).
+  \frametitle{基因组学 | 测序 | 数据库 | GEO}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{c2.genomics/db.geo.03.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | 千人基因组计划}
+  \begin{block}{千人基因组计划}
+千人基因组计划（1000 Genomes Project），旨在绘制迄今（截至2011年）最详尽、最有医学应用价值的人类基因多态性图谱，该图谱由中美英等国科研机构发起的“千人基因组计划”共同协作完成，标志着人类基因研究取得重大突破。\\
+\vspace{1em}
+这项计划于2008年启动，目前该项目拥有超过1700个样本，高达200TB数据量的DNA序列。2012年开始全部数据免费对外开放。
+  \end{block}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | 千人基因组计划}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/db.1kg.01.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | 千人基因组计划}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/db.1kg.02.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | 千人基因组计划}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/db.1kg.03.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | TCGA}
+  \begin{block}{TCGA}
+Cancer Genome Atlas（TCGA）和International Cancer Consortium（ICGC）是目前国际上最大的两个癌症基因信息检索数据库，共收集了43种癌症的超过13万个样本数据，此外还涉及到相关癌症基因的mRNA/microRNA表达谱、拷贝数变异、突变等大量的生物信息学数据。
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | TCGA}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/db.tcga.01.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | TCGA}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/db.tcga.02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | ICGC}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{c2.genomics/db.icgc.01.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据库 | ICGC}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/db.icgc.02.png}
+  \end{figure}
+\end{frame}
+    
+\subsection{数据格式}
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | 概览}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/workflow.ngs.01.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | 概览}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/workflow.ngs.02.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | 概览}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/workflow.ngs.03.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | 概览}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/workflow.ngs.04.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | 概览}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/workflow.ngs.05.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | 简介}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.list.01.jpg}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | 简介}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.list.02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | \textcolor{red}{简介}}
+  \begin{block}{Reference sequences}
+    \begin{itemize}
+      \item FASTA
+      \item 2bit
+    \end{itemize}
   \end{block}
   \pause
-  \begin{block}{Projects}
-    Examples of research projects using exome sequencing include:
+  \begin{block}{Reads}
     \begin{itemize}
-      \item PGP (Personal Genome Project)
-      \item RGI (Rare Genomics Institute)
-      \item NIH-funded Exome Project
-      \item NHGRI-funded Mendelian Exome Project
-      \item NHLBI Grand Opportunity Exome Sequencing Project
-      \item microarray-based Nimblegen SeqCap EZ Exome from Roche Applied Science
+      \item FASTQ (FASTA with quality scores)
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{block}{Alignments}
+    \begin{itemize}
+      \item SAM (Sequence Alignment/Map format)
+      \item BAM (Binary version of SAM)
+    \end{itemize}
+  \end{block}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | \textcolor{red}{简介}}
+  \begin{block}{Features, annotation, coverage, scores}
+    \begin{itemize}
+      \item GFF3/GTF (General Feature Format, Gene Transfer Format)
+      \item BED/bigBed (Browser Extensible Data)
+      \item WIG/bigWig (Wiggle format)
+      \item bedGraph
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{block}{Variations}
+    \begin{itemize}
+      \item VCF (Variant Call Format)
+      \item BCF (Binary version of VCF)
     \end{itemize}
   \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing}
-  Exome sequencing consists of first selecting only the subset of DNA that encodes proteins (known as exons) and then sequencing that DNA using any high-throughput DNA sequencing technology.\\
-  \vspace{1em}
-  Humans have about 180,000 exons, constituting about 1\% of the human genome, or approximately 30 million base pairs.\\
-  \vspace{1em}
-  The goal of this approach is to identify genetic variation that is responsible for both Mendelian and common diseases such as Miller syndrome and Alzheimer's disease without the high costs associated with whole-genome sequencing.\\
-  \vspace{1em}
-  Exome sequencing has proved to be an efficient strategy to determine the genetic basis of more than two dozen Mendelian or single gene disorders.
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing}
+  \frametitle{基因组学 | 测序 | 数据格式 | 简介}
   \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{c2.genomics/exome.wes.01.jpg}
+    \includegraphics[width=\textwidth]{c2.genomics/format.list.05.png}
   \end{figure}
 \end{frame}
-
+    
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTA}
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/exome.wes.02.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | \textcolor{red}{Exome sequencing}}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/exome.wes.03.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/exome.wes.04.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | WGS}
-  \begin{block}{WGS}
-    Whole genome sequencing (also known as WGS, full genome sequencing, complete genome sequencing, or entire genome sequencing) is a laboratory process that determines the complete DNA sequence of an organism's genome at a single time.\\
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fasta.05.png}\\
     \vspace{1em}
-    This entails sequencing all of an organism's chromosomal DNA as well as DNA contained in the mitochondria and, for plants, in the chloroplast.
-  \end{block}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fasta.01.jpg}
+  \end{figure}
 \end{frame}
-
+    
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | WGS}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ}
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/exome.wgs.01.png}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.00.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Comparison}
-  \begin{block}{SNP array}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/format.fastq.06.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ}
+  \begin{block}{FASTQ}
+FASTQ format is a text-based format for storing both a biological sequence (usually nucleotide sequence) and its corresponding quality scores. Both the sequence letter and quality score are each encoded with a single ASCII character for brevity.\\
+\vspace{1em}
+It was originally developed at the Wellcome Trust Sanger Institute to bundle a FASTA sequence and its quality data, but has recently become the \textit{de facto} standard for storing the output of high-throughput sequencing instruments such as the Illumina Genome Analyzer.\\
+\vspace{1em}
+There is no standard file extension for a FASTQ file, but \textcolor{red}{.fq} and \textcolor{red}{.fastq}, are commonly used.
+  \end{block}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ vs. FASTA}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/format.fasta.fastq.01.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | \textcolor{red}{FASTQ}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/format.fastq.02.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | \textcolor{red}{FASTQ}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.04.jpg}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.01.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ | ID}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.id.01.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ | ID}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.id.02.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ | ID}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.id.03.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.07.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ | SRA}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.sra.02.png}
+  \end{figure}
+  \begin{block}{Note}
     \begin{itemize}
-      \item require hybridization probes of a known sequence
-      \item can only detect shared genetic variants that are common to many individuals in the wider population 
+      \item ID = NCBI-assigned identifier + the original identifier from Solexa/Illumina + the read length
+      \item fastq-dump: lost the paired-end information, concatenate sequence of the forward and reverse reads together into a non-sense
+      \item NCBI have converted this FASTQ data from the original Solexa/Illumina encoding to the Sanger standard
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ | Quality}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.qual.07.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ | \textcolor{red}{Quality}}
+  \begin{block}{Phred quality score}
+A quality value Q is an integer mapping of p (i.e., the probability that the corresponding base call is incorrect).\\
+\vspace{1em}
+Phred quality score (the standard Sanger variant, assess reliability of a base call): 
+  \end{block}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{c2.genomics/format.fastq.qual.01.png}\\
+    \vspace{1em}
+    \includegraphics[width=0.8\textwidth]{c2.genomics/format.fastq.qual.02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ | \textcolor{red}{Quality}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.qual.06.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ | Quality | Encoding}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/format.fastq.qual.04.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ | Quality}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.fastq.qual.08.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | FASTQ | 用途}
+  \begin{block}{Quality control}
+    \begin{itemize}
+      \item quality score distribution
+      \item GC content
+      \item k-mer enrichment
+      \item ...
     \end{itemize}
   \end{block}
   \pause
-  \begin{block}{whole genome sequencing}
-    high costs and time associated with sequencing large numbers of genomes
-    %\verb|$_$| All money money go my home \verb|$_$|
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Comparison}
-  \begin{block}{Exome sequencing}
+  \begin{block}{Preprocessing}
     \begin{itemize}
-      \item the most efficient way to identify the genetic variants in all of an individual's genes $\Rightarrow$ especially effective in the study of rare Mendelian diseases
-      \item severe disease causing variants are much more likely (but by no means exclusively) to be in the protein coding sequence $\Rightarrow$ focusing on this 1\% costs far less than whole genome sequencing but still produces a high yield of relevant variants
-      \item both to find mutations in genes already known to cause disease as well as to identify novel genes by comparing exomes from patients with similar features
+      \item adapter removal
+      \item low-quality reads filtering
+      \item ...
+    \end{itemize}
+  \end{block}
+  \pause
+  \begin{block}{Processing}
+    \begin{itemize}
+      \item alignment
+      \item further analysis
     \end{itemize}
   \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Technique}
-  \begin{block}{Techiniques}
+  \frametitle{基因组学 | 测序 | 数据格式 | SAM}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{c2.genomics/format.sam.30.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | SAM}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.sam.31.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | SAM}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/format.sam.32.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | SAM}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/format.sam.01.png}
+  \end{figure}
+  \begin{block}{SAM Format Specification}
+    \href{https://samtools.github.io/hts-specs/SAMv1.pdf}{https://samtools.github.io/hts-specs/SAMv1.pdf}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | \textcolor{red}{SAM}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.sam.02.png}\\
+    \vspace{1em}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.sam.10.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | \textcolor{red}{SAM}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{c2.genomics/format.sam.06.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | SAM | FLAG}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.sam.flag.01.png}
+  \end{figure}
+  \begin{block}{Example}
+    99 = 64 + 32 + 2 + 1
+  \end{block}
+  \begin{block}{Decoding SAM flags}
+  \href{http://broadinstitute.github.io/picard/explain-flags.html}{http://broadinstitute.github.io/picard/explain-flags.html}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | SAM | FLAG}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{c2.genomics/format.sam.flag.02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | SAM | CIGAR}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.sam.cigar.01.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | SAM | CIGAR}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.sam.cigar.02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | SAM | TAG}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.sam.tag.01.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | SAM}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{c2.genomics/format.sam.03.png}\\
+    \vspace{1em}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.sam.04.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | BAM}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{c2.genomics/format.bam.01.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | \textcolor{red}{BED}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.bed.01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | BED}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/format.bed.10.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | BED}
+  \begin{block}{BED}
     \begin{itemize}
-      \item Target-enrichment strategies
-      \item PCR
-      \item Molecular inversion probes (MIP)
-      \item Hybrid capture
-      \item In-solution capture
-      \item Sequencing
+      \item Developed primarily for the UCSC genome browser
+      \item Used to store annotations on genomic coordinates
+        \begin{itemize}
+          \item Annotate gene/mRNA/exon/... position
+          \item Annotate Transcription Factor binding sites
+          \item Annotate SNP genotypes
+          \item Annotate Gene Expression
+          \item Annotate ...
+        \end{itemize}
     \end{itemize}
   \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Technique}
-  \begin{block}{Target-enrichment strategies}
-    Target-enrichment methods allow one to selectively capture genomic regions of interest from a DNA sample prior to sequencing. Several target-enrichment strategies have been developed since the original description of the direct genomic selection (DGS) method by the Lovett group in 2005.
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Technique}
-  \begin{block}{PCR}
-    Polymerase chain reaction (PCR) is technology to amplify specific DNA sequences. It uses a single stranded piece of DNA as a start for DNA amplification. Uniplex PCR uses only one starting point (primer) for amplification and multiplex PCR uses multiple primers. This way multiple genes can be targeted simultaneously.
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Technique}
-  \begin{block}{Molecular inversion probes (MIP)}
-    Molecular inversion probe uses probes of single stranded DNA oligonucleotides flanked by target-specific ends. The gaps between the flanking sequences are filled and ligated to form a circular DNA fragment. Probes that did not undergo reaction remain linear and are removed using exonucleases. This is an enzymatic technique that targets the amplification of genomic regions by multiplexing based on target circularization.
-  \end{block}
+  \frametitle{基因组学 | 测序 | 数据格式 | GTF}
   \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{c2.genomics/exome.mip.01.png}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.gtf.gff.02.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | GTF}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.gtf.01.jpg}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | GTF}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/format.gtf.10.png}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | \textcolor{red}{GFF}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.gff.01.jpg}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | GFF}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/format.gff.10.jpg}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | GTF vs. GFF}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.gtf.gff.01.jpg}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Technique}
-  \begin{block}{Hybrid capture}
-    Microarrays contain single-stranded oligonucleotides with sequences from the human genome to tile the region of interest fixed to the surface. Genomic DNA is sheared to form double-stranded fragments. The fragments undergo end-repair to produce blunt ends and adaptors with universal priming sequences are added. These fragments are hybridized to oligos on the microarray. Unhybridized fragments are washed away and the desired fragments are eluted. The fragments are then amplified using PCR.
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Technique}
-  \begin{block}{In-solution capture}
- To capture genomic regions of interest using in-solution capture, a pool of custom oligonucleotides (probes) is synthesized and hybridized in solution to a fragmented genomic DNA sample. The probes (labeled with beads) selectively hybridize to the genomic regions of interest after which the beads (now including the DNA fragments of interest) can be pulled down and washed to clear excess material. The beads are then removed and the genomic fragments can be sequenced allowing for selective DNA sequencing of genomic regions (e.g., exons) of interest.\\
- \vspace{1em}
- This method was developed to improve on the hybridization capture target-enrichment method.
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Technique}
+  \frametitle{基因组学 | 测序 | 数据格式 | GTF vs. GFF}
   \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{c2.genomics/exome.isp.01.png}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.gtf.gff.03.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Technique}
-  \begin{block}{Sequencing}
- There are several sequencing platforms available including the classical Sanger sequencing. Other platforms include the Roche 454 sequencer, the Illumina Genome Analyzer II and the Life Technologies SOLiD \& Ion Torrent all of which have been used for exome sequencing. 
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Significance}
-  Exome sequencing has the potential to locate causative genes in complex diseases, which previously has not been possible due to limitations in traditional methods.\\
-  \vspace{1em}
-  Targeted capture and massively parallel sequencing represents a cost-effective, reproducible and robust strategy with high sensitivity and specificity to detect variants causing protein-coding changes in individual human genomes.
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Limitation}
-  \begin{block}{Exome}
- Exome sequencing is only able to identify those variants found in the coding region of genes which affect protein function. It is not able to identify the structural and non-coding variants associated with the disease, which can be found using other methods such as whole genome sequencing. There remains 99\% of the human genome that is not covered using exome sequencing. 
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | Limitation}
-  \begin{block}{Statistical analysis}
-    The statistical analysis of the large quantity of data generated from sequencing approaches is a challenge. False positive and false negative findings are associated with genomic resequencing approaches and is a critical issue. A few strategies have been developed to improve the quality of exome data such as:
-    \begin{itemize}
-      \item Comparing the genetic variants identified between sequencing and array-based genotyping
-      \item Comparing the coding SNPs to a whole genome sequenced individual with the disorder
-      \item Comparing the coding SNPs with Sanger sequencing of HapMap individuals
-    \end{itemize}
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 简介 | Exome sequencing | \textcolor{red}{Application}}
-  By using exome sequencing, fixed-cost studies can sequence samples to much higher depth than could be achieved with whole genome sequencing. This additional depth makes exome sequencing well suited to several applications that need reliable variant calls.
-  \begin{itemize}
-    \item Rare variant mapping in complex disorders
-    \item Discovery of Mendelian disorders
-    \item Clinical diagnostics
-    \item Direct-to-consumer exome sequencing
-  \end{itemize}
-\end{frame}
-
-\subsection{操作流程}
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 实验}
+  \frametitle{基因组学 | 测序 | 数据格式 | BED vs. GFF}
   \begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{c2.genomics/exome.exp.01.png}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.bed.gff.01.jpg}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | BED vs. GFF}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/format.bed.gff.02.jpg}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | VCF}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.vcf.01.jpg}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | VCF}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.vcf.02.jpg}
+  \end{figure}
+\end{frame}
+    
+\begin{frame}
+  \frametitle{基因组学 | 测序 | 数据格式 | \textcolor{red}{VCF}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.vcf.03.jpg}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{外显子组测序 | 流程 | 实验}
+  \frametitle{基因组学 | 测序 | 数据格式 | VCF}
   \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{c2.genomics/exome.exp.02.png}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/format.vcf.04.jpg}
   \end{figure}
 \end{frame}
-
+    
 \begin{frame}
-  \frametitle{外显子组测序 | 流程 | \textcolor{red}{实验}}
+  \frametitle{基因组学 | 测序 | 数据格式 | VCF}
   \begin{figure}
     \centering
-    \includegraphics[width=0.85\textwidth]{c2.genomics/exome.exp.03.png}
+    \includegraphics[width=\textwidth]{c2.genomics/format.vcf.05.png}
   \end{figure}
 \end{frame}
-
+    
 \begin{frame}
-  \frametitle{外显子组测序 | 流程 | \textcolor{red}{生信}}
+  \frametitle{基因组学 | 测序 | 数据格式 | VCF}
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/exome.bx.01.png}
+    \includegraphics[width=\textwidth]{c2.genomics/format.vcf.13.png}
   \end{figure}
 \end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 生信}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{c2.genomics/exome.bx.03.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 生信}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{c2.genomics/exome.bx.04.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 生信}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.55\textwidth]{c2.genomics/exome.bx.02.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 生信}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/exome.bx.07.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 生信}
-  \begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{c2.genomics/exome.bx.08.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 生信}
-  \begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{c2.genomics/exome.bx.05.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 生信}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{c2.genomics/exome.bx.06.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | \textcolor{red}{实验 \& 生信}}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{c2.genomics/exome.exp.bx.01.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 实例}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/exome.case.01.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 实例}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/exome.case.02.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 实例}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/exome.case.03.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 实例}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{c2.genomics/exome.case.04.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{外显子组测序 | 流程 | 实例}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/exome.case.05.png}
-  \end{figure}
-\end{frame}
-
+    
