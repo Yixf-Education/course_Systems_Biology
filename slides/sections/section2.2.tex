@@ -571,7 +571,7 @@ Ion Torrent的化学测序原理自然简单，无修饰的核苷酸、无激光
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第三代 | tSMS}
   \begin{block}{优缺点}
-真正的单分子测序，无需前期扩增，不引入偏向性；特别适合RNA-Seq或RNA直接测序的应用，因为它能直接测序RNA模板，而无需将其转化成cDNA。检测碱基替换突变的误差率非常低，～0.2\%。\\
+    真正的单分子测序，无需前期扩增，不引入偏向性；特别适合RNA-Seq或RNA直接测序的应用，因为它\textcolor{red}{能直接测序RNA模板}，而无需将其转化成cDNA。检测碱基替换突变的误差率非常低，～0.2\%。\\
 \vspace{1em}
 缺点: 错误率高，Insertion 1.5\%，Deletion 3.0\%；Heliscope在面对同聚物时也会遇到一些困难，但可以通过二次测序提高准确度；由于在合成中可能掺有未标记的碱基，因此其最主要的错误来源是缺失。
   \end{block}
@@ -606,7 +606,7 @@ DNA聚合酶是实现超长读长的关键之一，读长主要跟酶的活性�
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第三代 | SMRT}
   \begin{block}{优缺点}
-可以通过检测相邻两个碱基之间的测序时间，来检测一些碱基修饰情况，即如果碱基存在修饰，则通过聚合酶时的速度会减慢，相邻两峰之间的距离增大，可以通过这个来直接检测甲基化等信息。\\
+可以通过检测相邻两个碱基之间的测序时间，来检测一些碱基修饰情况，即如果碱基存在修饰，则通过聚合酶时的速度会减慢，相邻两峰之间的距离增大，可以通过这个来\textcolor{red}{直接检测甲基化}等信息。\\
 \vspace{1em}
 SMRT技术的测序速度很快，每秒约10个dNTP。读长长。无需PCR扩增，也避免了由此带来的bias。需要的样品量很少，样品制备时间花费少。通量灵活，时间快。可以远程快速获取数据和选择测序参数。\\
 \vspace{1em}
@@ -657,9 +657,9 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \begin{frame}
   \frametitle{基因组学 | 测序 | 第三代 | 纳米孔测序}
   \begin{block}{优缺点}
-纳米孔测序的主要特点是：读长很长，大约在几十kb，甚至100kb；错误率目前介于1\%至4\%，且是随机错误，而不是聚集在读段的两端；数据可实时读取；通量很高（30x人类基因组有望在一天内完成）；起始DNA在测序过程中不被破坏；样品制备简单又便宜。理论上，它也能直接测序RNA。\\
+纳米孔测序的主要特点是：读长很长，大约在几十kb，甚至100kb；错误率目前介于1\%至4\%，且是随机错误，而不是聚集在读段的两端；数据可实时读取；通量很高（30x人类基因组有望在一天内完成）；起始DNA在测序过程中不被破坏；样品制备简单又便宜。理论上，它也\textcolor{red}{能直接测序RNA}。\\
 \vspace{1em}
-纳米孔单分子测序还有另外一大特点，它能够直接读取出甲基化的胞嘧啶，而不必像传统方法那样对基因组进行bisulfite处理。这对于在基因组水平直接研究表观遗传相关现象有极大的帮助。并且该方法的测序准确性可达99.8\%，而且一旦发现测序错误也能较容易地进行纠正。
+纳米孔单分子测序还有另外一大特点，它\textcolor{red}{能够直接读取出甲基化的胞嘧啶}，而不必像传统方法那样对基因组进行bisulfite处理。这对于在基因组水平直接研究表观遗传相关现象有极大的帮助。并且该方法的测序准确性可达99.8\%，而且一旦发现测序错误也能较容易地进行纠正。
   \end{block}
 \end{frame}
 
@@ -728,7 +728,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 
 \subsection{测序技术比较}
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 比较}
+  \frametitle{基因组学 | 测序 | 比较 | 公司}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.logo.01.jpg}
@@ -736,7 +736,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 比较}
+  \frametitle{基因组学 | 测序 | 比较 | 三代}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.compare.20.jpg}
@@ -744,7 +744,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 比较}
+  \frametitle{基因组学 | 测序 | 比较 | 三代}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.compare.21.jpg}
@@ -752,7 +752,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 比较}
+  \frametitle{基因组学 | 测序 | 比较 | 三代}
   \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{c2.genomics/sequencing.compare.22.jpg}
@@ -760,7 +760,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 比较}
+  \frametitle{基因组学 | 测序 | 比较 | 三代}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/sequencing.compare.23.jpg}
@@ -768,7 +768,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 比较}
+  \frametitle{基因组学 | 测序 | 比较 | 三代}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/sequencing.compare.06.png}
@@ -784,7 +784,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 % \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 比较}
+  \frametitle{基因组学 | 测序 | 比较 | 三代}
   \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{c2.genomics/sequencing.compare.02.png}
@@ -800,7 +800,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 % \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 比较}
+  \frametitle{基因组学 | 测序 | 比较 | 三代}
   \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{c2.genomics/sequencing.compare.04.png}
@@ -808,7 +808,7 @@ Oxford Nanopore Technologies公司所开发的纳米单分子测序技术（Nano
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 测序 | 比较}
+  \frametitle{基因组学 | 测序 | 比较 | 三代}
   \begin{figure}
     \centering
     \includegraphics[width=0.75\textwidth]{c2.genomics/sequencing.compare.05.png}

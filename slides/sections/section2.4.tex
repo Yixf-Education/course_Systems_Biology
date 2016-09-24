@@ -1,7 +1,7 @@
 \section{二代测序数据分析}
 \subsection{常见术语}
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | \textcolor{red}{深度 vs. 覆盖度}}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | \textcolor{red}{深度 vs. 覆盖度}}
   \begin{block}{深度（depth）}
     \begin{itemize}
       \item 也叫乘数，衡量测序量的首要参数；测序得到的总碱基数与待测基因组大小的比值；每个碱基被测序的平均次数
@@ -18,7 +18,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | 深度 vs. 覆盖度}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | 深度 vs. 覆盖度}
   \begin{block}{实验}
 对长100bp的目标区域进行捕获测序：采用单端测序，每个read长5bp；总共得到了200个reads；把所有的reads比对到目标区域后，100bp的目标区域中有98bp的位置至少有1个read覆盖到，换言之，剩余的2bp没有1个read覆盖。
   \end{block}
@@ -32,7 +32,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | 深度 vs. 覆盖度}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | 深度 vs. 覆盖度}
   \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{c2.genomics/term.depth.cov.01.png}
@@ -40,7 +40,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | SE vs. PE}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | SE vs. PE}
   \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{c2.genomics/term.se.pe.01.jpg}
@@ -48,7 +48,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | SE vs. PE}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | SE vs. PE}
   \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{c2.genomics/term.se.pe.02.jpg}
@@ -56,7 +56,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | PE}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | PE}
   \begin{block}{Paired-End Sequencing}
     \begin{itemize}
       \item allows users to sequence both ends of a fragment and generate high-quality, alignable sequence data
@@ -70,7 +70,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | PE}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | PE}
   \begin{block}{Paired-End DNA Sequencing}
     \begin{itemize}
       \item provide superior alignment across DNA regions containing repetitive sequences
@@ -87,7 +87,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | PE}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | PE}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/term.se.pe.03.jpg}
@@ -95,7 +95,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | PE | Power}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | PE | Power}
   \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{c2.genomics/term.pe.03.png}\\
@@ -105,7 +105,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | \textcolor{red}{PE}}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | \textcolor{red}{PE}}
   \begin{figure}
     \centering
     \only<1->{\includegraphics[width=\textwidth]{c2.genomics/term.insert.size.01.png}}\\
@@ -114,13 +114,13 @@
   \end{figure}
   \only<3->{
   \begin{block}{Conclusion}
-Remember that ``insert" refers to the DNA fragment between the adaptors, and not the gap between R1 and R2. Instead we refer to that as the ``inner mate distance".
+    Remember that ``\textcolor{red}{insert}" refers to the DNA fragment between the adaptors, and not the gap between R1 and R2. Instead we refer to that as the ``\textcolor{red}{inner mate distance}".
   \end{block}
   }
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | \textcolor{red}{PE}}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | \textcolor{red}{PE}}
   \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{c2.genomics/term.pe.02.png}
@@ -128,7 +128,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 术语 | \textcolor{red}{其他}}
+  \frametitle{基因组学 | NGS | 数据分析 | 术语 | \textcolor{red}{其他}}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/term.other.01.png}
@@ -137,7 +137,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 
 \subsection{分析流程}
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 概述 | 总览}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 概述 | 总览}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/workflow.ngs.05.png}
@@ -145,7 +145,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 概述 | 总览}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 概述 | 总览}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/workflow.ngs.01.png}
@@ -153,7 +153,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 概述 | 总览}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 概述 | 总览}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/workflow.ngs.02.png}
@@ -161,23 +161,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 概述 | \textcolor{red}{Seqs}}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/workflow.ngs.03.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 概述 | Seqs}
-  \begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{c2.genomics/workflow.ngs.04.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 概述 | 总览}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 概述 | 总览}
   \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{c2.genomics/workflow.ngs.10.png}
@@ -185,15 +169,23 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 概述 | \textcolor{red}{Exome}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 概述 | \textcolor{red}{Seqs}}
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/workflow.exome.03.png}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/workflow.ngs.03.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 概述 | \textcolor{red}{Exome}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 概述 | Seqs}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/workflow.ngs.04.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 概述 | \textcolor{red}{WES}}
   \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{c2.genomics/workflow.exome.05.png}
@@ -201,7 +193,15 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控（Quality Control）}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 概述 | \textcolor{red}{WES}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/workflow.exome.03.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控（QC）}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.pre.01.png}
@@ -209,7 +209,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.pre.02.png}
@@ -217,7 +217,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.pre.04.png}
@@ -225,7 +225,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.report.01.png}
@@ -233,7 +233,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | 工具}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | 工具}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.tool.01.png}
@@ -241,7 +241,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | \textcolor{red}{工具}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | \textcolor{red}{工具}}
   \begin{block}{FastQC}
     A quality control tool for high throughput sequence data.
   \end{block}
@@ -259,7 +259,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.fastqc.00.png}
@@ -267,7 +267,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.fastqc.03.png}
@@ -275,7 +275,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.fastqc.01.png}
@@ -283,7 +283,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.fastqc.02.png}
@@ -291,7 +291,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.10.png}
@@ -299,7 +299,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.11.png}
@@ -307,7 +307,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.30.png}
@@ -315,7 +315,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.12.png}
@@ -323,7 +323,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.13.png}
@@ -331,7 +331,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.14.png}
@@ -339,7 +339,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.15.png}
@@ -347,7 +347,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.fastqc.31.png}
@@ -355,7 +355,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.fastqc.32.png}
@@ -363,7 +363,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.16.png}
@@ -371,7 +371,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.17.png}
@@ -379,7 +379,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.18.png}
@@ -387,7 +387,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.19.png}
@@ -395,7 +395,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.20.png}
@@ -403,7 +403,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.fastqc.33.png}
@@ -411,7 +411,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{c2.genomics/qc.fastqc.34.png}
@@ -419,7 +419,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{c2.genomics/qc.fastqc.21.png}
@@ -427,7 +427,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{c2.genomics/qc.fastqc.36.png}
@@ -435,7 +435,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{c2.genomics/qc.fastqc.35.png}
@@ -443,7 +443,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.fastqc.22.png}
@@ -451,7 +451,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.fastqc.37.png}
@@ -459,7 +459,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.23.png}
@@ -467,7 +467,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{c2.genomics/qc.fastqc.24.png}
@@ -475,7 +475,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{c2.genomics/qc.fastqc.25.png}
@@ -483,7 +483,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | FastQC}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | FastQC}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.fastqc.26.png}
@@ -491,23 +491,23 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | NGS QC Toolkit}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | NGS QC Toolkit}
   \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{c2.genomics/qc.ngs.01.png}
+    \includegraphics[width=0.78\textwidth]{c2.genomics/qc.ngs.01.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | NGS QC Toolkit}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | NGS QC Toolkit}
   \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{c2.genomics/qc.ngs.02.png}
+    \includegraphics[width=0.75\textwidth]{c2.genomics/qc.ngs.02.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | NGS QC Toolkit}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | NGS QC Toolkit}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.ngs.03.png}
@@ -515,15 +515,15 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | NGS QC Toolkit}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | NGS QC Toolkit}
   \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{c2.genomics/qc.ngs.04.png}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/qc.ngs.04.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | SolexaQA}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | SolexaQA}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.qa.01.png}
@@ -531,7 +531,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | SolexaQA}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | SolexaQA}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.qa.02.png}
@@ -539,7 +539,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控 | SolexaQA}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控 | SolexaQA}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/qc.qa.03.png}
@@ -547,7 +547,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 预处理}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 预处理}
   \begin{block}{目的}
  manipulating the sequences to produce better mapping results
   \end{block}
@@ -566,7 +566,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 预处理}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 预处理}
   \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{c2.genomics/pre.01.jpg}
@@ -574,7 +574,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 预处理}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 预处理}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/pre.02.png}
@@ -582,7 +582,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 预处理 | \textcolor{red}{工具}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 预处理 | \textcolor{red}{工具}}
   \begin{block}{FASTX-Toolkit}
     A collection of command line tools for Short-Reads FASTA/FASTQ files preprocessing.
   \end{block}
@@ -590,10 +590,14 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
   \begin{block}{PRINSEQ}
     PReprocessing and INformation of SEQuence data. A publicly available tool that is able to filter, reformat and trim your sequences and to provide you summary statistics for your sequence data.
   \end{block}
+  \pause
+  \begin{block}{cutadapt}
+    Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads. It can also modify and filter reads in various ways.
+  \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 预处理 | FASTX-Toolkit}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 预处理 | FASTX-Toolkit}
   \begin{figure}
     \centering
     \includegraphics[width=0.58\textwidth]{c2.genomics/pre.fastx.cli.01.png}
@@ -602,15 +606,15 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 预处理 | FASTX-Toolkit}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 预处理 | FASTX-Toolkit}
   \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{c2.genomics/pre.fastx.clip.01.png}
+    \includegraphics[width=0.7\textwidth]{c2.genomics/pre.fastx.clip.01.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 预处理 | PRINSEQ}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 预处理 | PRINSEQ}
   \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{c2.genomics/pre.prinseq.01.png}
@@ -618,7 +622,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 质控与预处理}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 质控与预处理}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/qc.pre.03.png}
@@ -626,7 +630,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.01.png}
@@ -634,7 +638,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.07.png}
@@ -642,7 +646,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.10.png}
@@ -650,7 +654,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.08.png}
@@ -658,7 +662,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 算法}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 算法}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.02.png}
@@ -666,7 +670,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 算法}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 算法}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.09.png}
@@ -674,7 +678,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 算法}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 算法}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.03.jpg}
@@ -682,15 +686,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 算法}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.04.jpg}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 算法}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 算法}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.05.jpg}
@@ -698,7 +694,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 算法}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 算法 | BWT}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.06.jpg}
@@ -706,7 +702,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 算法 | BWT}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 算法 | BWT}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.bwt.01.jpg}
@@ -714,7 +710,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 算法 | BWT}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 算法 | BWT}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/mapping.bwt.02.jpg}
@@ -722,7 +718,15 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 算法}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 算法}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/mapping.04.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 算法}
   \begin{figure}
     \centering
     \includegraphics[width=0.65\textwidth]{c2.genomics/mapping.11.png}
@@ -730,7 +734,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 工具}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 工具}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/tool.alignment.02.png}
@@ -738,7 +742,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 工具}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 工具}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/tool.alignment.03.png}
@@ -746,7 +750,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 工具}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 工具}
   \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{c2.genomics/tool.alignment.04.png}
@@ -754,7 +758,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | 工具}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | 工具}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/tool.alignment.01.png}
@@ -762,7 +766,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | \textcolor{red}{工具}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | \textcolor{red}{工具}}
   \begin{block}{BWA}
     BWA(Burrows-Wheeler Aligner) is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
   \end{block}
@@ -777,7 +781,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | \textcolor{red}{工具}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | \textcolor{red}{工具}}
   \begin{block}{SOAP}
     SOAP has been in evolution from a single alignment tool to a tool package that provides full solution to next generation sequencing data analysis.
     \begin{itemize}
@@ -792,7 +796,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | BWA}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | BWA}
   \begin{block}{BWA}
      BWA consists of three algorithms: BWA-backtrack, BWA-SW and BWA-MEM.
     \begin{itemize}
@@ -804,7 +808,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | Bowtie}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | Bowtie}
   \begin{block}{Bowtie}
  Bowtie aligns short DNA sequences (reads) to the human genome at a rate of over 25 million 35-bp reads per hour. Bowtie indexes the genome with a Burrows-Wheeler index to keep its memory footprint small: typically about 2.2 GB for the human genome (2.9 GB for paired-end).
   \end{block}
@@ -815,7 +819,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 比对 | SOAP}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 比对 | SOAP}
   \begin{block}{SOAP}
     SOAP is a program for efficient gapped and ungapped alignment of short oligonucleotides onto reference sequences.
   \end{block}
@@ -830,7 +834,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 提取变异}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 提取变异}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/snp.calling.01.jpg}
@@ -838,7 +842,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 提取变异 | \textcolor{red}{工具}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 提取变异 | \textcolor{red}{工具}}
   \begin{block}{Samtools}
     Samtools is a suite of programs for interacting with high-throughput sequencing data.
   \end{block}
@@ -854,7 +858,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 提取变异 | Samtools}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 提取变异 | Samtools}
   \begin{block}{Samtools}
     Samtools consists of three separate repositories:
     \begin{description}
@@ -866,7 +870,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 提取变异 | GATK}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 提取变异 | GATK}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/snp.calling.gatk.01.png}\\
@@ -876,7 +880,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 提取变异 | VarScan}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 提取变异 | VarScan}
   \begin{block}{VarScan}
     VarScan is a platform-independent mutation caller for targeted, exome, and whole-genome resequencing data generated on Illumina, SOLiD, Life/PGM, Roche/454, and similar instruments. It can be used to detect different types of variation:
     \begin{itemize}
@@ -889,7 +893,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 注释变异 | \textcolor{red}{工具}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 注释变异 | \textcolor{red}{工具}}
   \begin{block}{SnpEff}
     Genetic variant annotation and effect prediction toolbox. It annotates and predicts the effects of variants on genes (such as amino acid changes).
   \end{block}
@@ -904,7 +908,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 注释变异 | SnpEff}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 注释变异 | SnpEff}
   \begin{block}{Features}
     \begin{itemize}
       \item Supports over 38,000 genomes
@@ -918,7 +922,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 注释变异 | ANNOVAR}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 注释变异 | ANNOVAR}
   \begin{block}{ANNOVAR}
     Given a list of variants with chromosome, start position, end position, reference nucleotide and observed nucleotides, ANNOVAR can perform:
     {\footnotesize
@@ -933,14 +937,18 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 注释变异 | wANNOVAR}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 注释变异 | wANNOVAR}
   \begin{block}{wANNOVAR}
-  wANNOVAR is a web server that provides easy and intuitive web-based access to the most popular functionalities of the ANNOVAR software. Users can upload a VCF file and obtain annotated results as tab-delimited or comma-deleted files; in addition, simple variants reduction can be performed to prioritize deleterious variants from the input files. Currently, wANNOVAR supports only human genome annotation.
+  wANNOVAR is a web server that provides easy and intuitive web-based access to the most popular functionalities of the ANNOVAR software.\\
+  \vspace{0.5em}
+  Users can upload a VCF file and obtain annotated results as tab-delimited or comma-deleted files; in addition, simple variants reduction can be performed to prioritize deleterious variants from the input files.\\
+  \vspace{0.5em}
+  Currently, wANNOVAR supports only human genome annotation.
   \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 注释变异 | SeattleSeq}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 注释变异 | SeattleSeq}
   \begin{block}{SeattleSeq Annotation}
   This annotation includes:
   \begin{itemize}
@@ -957,7 +965,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 注释变异 | \textcolor{red}{工具}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 注释变异 | \textcolor{red}{工具}}
   \begin{block}{SIFT}
     SIFT predicts whether an amino acid substitution affects protein function. SIFT prediction is based on the degree of conservation of amino acid residues in sequence alignments derived from closely related sequences, collected through PSI-BLAST. SIFT can be applied to naturally occurring nonsynonymous polymorphisms or laboratory-induced missense mutations.
   \end{block}
@@ -968,7 +976,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 注释变异 | SIFT}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 注释变异 | SIFT}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/snp.annotation.sift.01.png}
@@ -976,7 +984,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 注释变异 | PolyPhen-2}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 注释变异 | PolyPhen-2}
   \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{c2.genomics/snp.annotation.polyphen2.01.png}
@@ -984,7 +992,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 可视化 | \textcolor{red}{工具}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 可视化 | \textcolor{red}{工具}}
   \begin{block}{Genome Browser}
     interactively visualize genomic data
   \end{block}
@@ -998,12 +1006,12 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
   \end{block}
   \pause
   \begin{block}{Circos}
-    Circos is a software package for visualizing data and information. It visualizes data in a circular layout — this makes Circos ideal for exploring relationships between objects or positions.
+    Circos is a software package for visualizing data and information. It visualizes data in a circular layout --- this makes Circos ideal for exploring relationships between objects or positions.
   \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 可视化 | Genome Browser}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 可视化 | Genome Browser}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/vis.gb.01.jpg}
@@ -1011,7 +1019,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 可视化 | IGV}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 可视化 | IGV}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/vis.igv.10.png}
@@ -1019,7 +1027,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 可视化 | IGV}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 可视化 | IGV}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/vis.igv.11.png}
@@ -1027,7 +1035,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 可视化 | IGV}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 可视化 | IGV}
   \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{c2.genomics/vis.igv.03.jpg}
@@ -1035,7 +1043,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 可视化 | IGV}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 可视化 | IGV}
   \begin{figure}
     \centering
     \includegraphics[width=0.95\textwidth]{c2.genomics/vis.igv.02.png}
@@ -1043,7 +1051,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 可视化 | GB vs. IGV}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 可视化 | GB vs. IGV}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/vis.gb.igv.01.png}
@@ -1051,7 +1059,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 可视化 | Tablet}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 可视化 | Tablet}
   \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{c2.genomics/vis.tablet.01.png}
@@ -1059,7 +1067,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 可视化 | Circos}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 可视化 | Circos}
   \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{c2.genomics/vis.circos.01.png}
@@ -1067,7 +1075,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 可视化 | Circos}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 可视化 | Circos}
   \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{c2.genomics/vis.circos.03.png}
@@ -1075,98 +1083,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/tool.other.01.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | \textcolor{red}{补遗}}
-  \begin{block}{Galaxy}
-    Galaxy is an open, web-based platform for data intensive biomedical research. Whether on the free public server or your own instance, you can perform, reproduce, and share complete analyses.
-  \end{block}
-  \pause
-  \begin{block}{Picard}
-    Picard is a set of command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | Galaxy}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/tool.galaxy.00.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | Galaxy}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/tool.galaxy.01.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | Galaxy}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/tool.galaxy.02.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | Galaxy}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.85\textwidth]{c2.genomics/tool.galaxy.03.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | Galaxy}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.85\textwidth]{c2.genomics/tool.galaxy.04.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | Galaxy}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{c2.genomics/tool.galaxy.05.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | Galaxy}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/tool.galaxy.06.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | Galaxy}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{c2.genomics/tool.galaxy.07.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | Galaxy}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/tool.galaxy.08.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | \textcolor{red}{补遗}}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | \textcolor{red}{补遗}}
   \begin{block}{bedtools}
     Collectively, the bedtools utilities are a swiss-army knife of tools for a wide-range of genomics analysis tasks. The most widely-used tools enable genome arithmetic: that is, set theory on the genome.
   \end{block}
@@ -1177,7 +1094,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | bedtools}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | bedtools}
   \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{c2.genomics/tools.other.bedtools.01.png}
@@ -1185,7 +1102,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗 | BEDOPS}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | BEDOPS}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/tools.other.bedops.01.png}
@@ -1193,17 +1110,174 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 流程 | 补遗}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | \textcolor{red}{补遗}}
+  \begin{block}{Picard}
+    Picard is a set of command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
+  \end{block}
+  \pause
+  \begin{block}{csvkit}
+    csvkit is a suite of command-line tools for converting to and working with CSV, the king of tabular file formats.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | csvkit}
+  \begin{block}{csvkit}
+    \begin{description}
+      \item[in2csv] the Excel killer
+      \item[csvlook] data periscope
+      \item[csvcut] data scalpel
+      \item[csvstat] statistics without code
+      \item[csvgrep] find the data you need
+      \item[csvsort] order matters
+      \item[csvjoin] merging related data
+      \item[csvstack] combining subsets
+      \item[csvsql \& sql2csv] ultimate power
+      \item[csvjson] going online
+      \item[csvpy] going into code
+      \item[csvformat] for legacy systems
+      \item[csvclean] clean common syntax errors
+    \end{description}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗}
   \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{c2.genomics/tool.other.02.png}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/tool.other.01.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | \textcolor{red}{工作流}}
+  \begin{block}{Bpipe}
+    Bpipe provides a platform for running big bioinformatics jobs that consist of a series of processing stages - known as 'pipelines'.
+  \end{block}
+  \pause
+  \begin{block}{Galaxy}
+    Galaxy is an open, web-based platform for data intensive biomedical research. Whether on the free public server or your own instance, you can perform, reproduce, and share complete analyses.
+  \end{block}
+  \pause
+  \begin{block}{Taverna}
+    Taverna is an open source and domain-independent Workflow Management System – a suite of tools used to design and execute scientific workflows and aid in silico experimentation.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | 比较}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/tool.pipeline.compare.01.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | 比较}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{c2.genomics/tool.pipeline.compare.02.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | Taverna}
+  \begin{block}{Taverna}
+    The Taverna tools include:
+    \begin{description}
+      \item[Workbench] desktop client application
+      \item[Command Line Tool] for a quick execution of workflows from a terminal
+      \item[Server] for remote execution of workflows
+      \item[Player] Web interface plugin for submitting workflows for remote execution
+    \end{description}
+    Taverna Online lets you create Taverna workflows from a Web browser.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | Galaxy}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{c2.genomics/tool.galaxy.00.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | Galaxy}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{c2.genomics/tool.galaxy.01.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | Galaxy}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{c2.genomics/tool.galaxy.02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | Galaxy}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{c2.genomics/tool.galaxy.03.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | Galaxy}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{c2.genomics/tool.galaxy.04.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | Galaxy}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{c2.genomics/tool.galaxy.05.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | Galaxy}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c2.genomics/tool.galaxy.06.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | Galaxy}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{c2.genomics/tool.galaxy.07.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工作流 | Galaxy}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{c2.genomics/tool.galaxy.08.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/tool.other.02.png}
   \end{figure}
 \end{frame}
 
 \subsection{补遗}
 \subsubsection{预处理}
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 预处理 | Trim}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 预处理 | Trim}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.trim.01.png}
@@ -1211,15 +1285,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 预处理 | Trim}
-  \begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{c2.genomics/supp.trim.02.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 预处理 | Trim}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 预处理 | Trim}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.trim.03.png}
@@ -1227,7 +1293,15 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 预处理 | Trim}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 预处理 | Filter}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c2.genomics/supp.trim.02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 预处理 | Trim+Filter}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/supp.trim.04.png}
@@ -1235,7 +1309,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 预处理 | Trim}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 预处理 | Trim}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.trim.05.png}
@@ -1244,7 +1318,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 
 \subsubsection{比对后}
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 比对 | Removal of PCR duplicates}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 比对 | Removal of PCR duplicates}
   \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{c2.genomics/supp.dup.01.png}
@@ -1252,7 +1326,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 比对 | Indel Realignment}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 比对 | Indel Realignment}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.realign.01.png}
@@ -1260,7 +1334,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 比对 | Indel Realignment}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 比对 | Indel Realignment}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.realign.02.png}
@@ -1268,7 +1342,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 比对 | Indel Realignment}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 比对 | Indel Realignment}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.realign.03.png}
@@ -1276,23 +1350,23 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 比对 | Indel Realignment}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 比对 | Indel Realignment}
   \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{c2.genomics/supp.realign.04.png}
+    \includegraphics[width=0.75\textwidth]{c2.genomics/supp.realign.04.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 比对 | Base quality recalibration}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 比对 | Base quality recalibration}
   \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{c2.genomics/supp.recal.01.png}
+    \includegraphics[width=0.9\textwidth]{c2.genomics/supp.recal.01.png}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 比对 | Base quality recalibration}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 比对 | Base quality recalibration}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.recal.02.jpg}
@@ -1300,16 +1374,16 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 比对 | Base quality recalibration}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 比对 | Base quality recalibration}
   \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{c2.genomics/supp.recal.03.png}
+    \includegraphics[width=0.75\textwidth]{c2.genomics/supp.recal.03.png}
   \end{figure}
 \end{frame}
 
 \subsubsection{实验设计}
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | Replicates}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 设计 | Replicates}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.rep.01.png}
@@ -1317,7 +1391,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | Replicates}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 设计 | Replicates}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.rep.02.png}
@@ -1325,7 +1399,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | Replicates}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 设计 | Replicates}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.rep.03.png}
@@ -1333,7 +1407,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | Replicates}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 设计 | Replicates}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.rep.04.png}
@@ -1341,7 +1415,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | Replicates}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 设计 | Replicates}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.rep.05.png}
@@ -1349,7 +1423,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | Replicates}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 设计 | Replicates}
   \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{c2.genomics/supp.rep.06.png}
@@ -1357,7 +1431,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | Read depth}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 设计 | Read depth}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.depth.01.png}
@@ -1365,15 +1439,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | Read depth}
-  \begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{c2.genomics/supp.depth.01.png}
-  \end{figure}
-\end{frame}
-
-\begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | Read length}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 设计 | Read length}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.length.01.png}
@@ -1381,7 +1447,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | Barcode}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 设计 | Barcode}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.barcode.01.png}
@@ -1389,7 +1455,7 @@ Remember that ``insert" refers to the DNA fragment between the adaptors, and not
 \end{frame}
 
 \begin{frame}
-  \frametitle{基因组学 | 数据分析 | 补遗 | 设计 | \textcolor{red}{KEY}}
+  \frametitle{基因组学 | NGS | 数据分析 | 补遗 | 设计 | \textcolor{red}{KEY}}
   \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{c2.genomics/supp.key.01.png}
