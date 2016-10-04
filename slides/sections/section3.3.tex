@@ -38,14 +38,14 @@
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq}
   \begin{block}{ChIP-Seq}
-染色质免疫沉淀-测序（ChIP-sequencing，简称为ChIP-seq）被用于分析蛋白质与DNA的交互作用。该技术将染色质免疫沉淀（ChIP）与大规模并行DNA测序结合起来以鉴定与DNA相关蛋白的结合部位。其可被用于精确绘制任意目的蛋白在全基因组上的结合位点。在此之前，ChIP-on-chip是研究这些蛋白-DNA联系的最常用的技术。
+染色质免疫沉淀-测序（ChIP-sequencing，简称为ChIP-Seq）被用于分析蛋白质与DNA的交互作用。该技术将染色质免疫沉淀（ChIP）与大规模并行DNA测序结合起来以鉴定与DNA相关蛋白的结合部位。其可被用于精确绘制任意目的蛋白在全基因组上的结合位点。在此之前，ChIP-on-chip是研究这些蛋白-DNA联系的最常用的技术。
   \end{block}
 \end{frame}
 
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq}
   \begin{block}{ChIP-Seq}
-    ChIP-sequencing, also known as ChIP-seq, is a method used to analyze protein interactions with DNA. ChIP-seq combines chromatin immunoprecipitation (ChIP) with massively parallel DNA sequencing to identify the binding sites of DNA-associated proteins. It can be used to map global binding sites precisely for any protein of interest. Previously, ChIP-on-chip was the most common technique utilized to study these protein–DNA relations.
+    ChIP-sequencing, also known as ChIP-seq, is a method used to analyze protein interactions with DNA. ChIP-seq combines chromatin immunoprecipitation (ChIP) with massively parallel DNA sequencing to identify the binding sites of DNA-associated proteins. It can be used to map global binding sites precisely for any protein of interest. Previously, ChIP-on-chip was the most common technique utilized to study these protein-DNA relations.
   \end{block}
 \end{frame}
 
@@ -97,14 +97,14 @@
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq | Precision}
   \begin{block}{Precision}
-    Unlike microarray-based ChIP methods, the precision of the ChIP-seq assay is not limited by the spacing of predetermined probes. By integrating a large number of short reads, highly precise binding site localization is obtained. Compared to ChIP-chip, ChIP-seq data can be used to locate the binding site within few tens of base pairs of the actual protein binding site. Tag densities at the binding sites are a good indicator of protein–DNA binding affinity, which makes it easier to quantify and compare binding affinities of a protein to different DNA sites.
+    Unlike microarray-based ChIP methods, the precision of the ChIP-seq assay is not limited by the spacing of predetermined probes. By integrating a large number of short reads, highly precise binding site localization is obtained. Compared to ChIP-chip, ChIP-seq data can be used to locate the binding site within few tens of base pairs of the actual protein binding site. Tag densities at the binding sites are a good indicator of protein-DNA binding affinity, which makes it easier to quantify and compare binding affinities of a protein to different DNA sites.
   \end{block}
 \end{frame}
 
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq | Computational analysis}
   \begin{block}{Computational analysis}
-    As with many high-throughput sequencing approaches, ChIP-seq generates extremely large data sets, for which appropriate computational analysis methods are required. To predict DNA-binding sites from ChIP-seq read count data, peak calling methods have been developed. The most popular method[citation needed] is MACS which empirically models the shift size of ChIP-Seq tags, and uses it to improve the spatial resolution of predicted binding sites.\\
+    As with many high-throughput sequencing approaches, ChIP-seq generates extremely large data sets, for which appropriate computational analysis methods are required. To predict DNA-binding sites from ChIP-seq read count data, peak calling methods have been developed. The most popular method is MACS which empirically models the shift size of ChIP-Seq tags, and uses it to improve the spatial resolution of predicted binding sites.\\
     \vspace{1em}
     Another relevant computational problem is Differential peak calling, which identifies significant differences in two ChIP-seq signals from distinct biological conditions. Differential peak callers segment two ChIP-seq signals and identify differential peaks using Hidden Markov Models. Examples for two-stage differential peak callers are ChIPDiff and ODIN.
   \end{block}
@@ -226,9 +226,9 @@
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq | 分析 | Peak calling}
   \begin{block}{Peak calling}
-    Peak calling是一种用于鉴定经染色质免疫沉淀-测序或MeDIP-测序实验后所得到的比对读段富集在基因组哪些区域中的一种计算方法。当免疫沉淀的蛋白质是一种转录因子时，那么DNA的富集区域就是这种它的转录因子结合位点（TFBS）。主流的Peak calling软件有MACS等。\\
+    Peak calling是一种用于鉴定经染色质免疫沉淀-测序或MeDIP-测序实验后所得到的比对读段富集在基因组哪些区域中的一种计算方法。当免疫沉淀的蛋白质是一种转录因子时，那么DNA的富集区域就是转录因子结合位点（TFBS）。主流的Peak calling软件有MACS等。\\
     \vspace{1em}
-    Peak calling可应用于转录组/外显组测序，亦可用于对MeRIP-测序或m6A-测序的RNA表观基因组测序数据进行分析；利用如exomePeak等的软件程序，可检测出转录后RNA修饰位点。
+    Peak calling可应用于转录组/外显子组测序，亦可用于对MeRIP-测序或m6A-测序的RNA表观基因组测序数据进行分析；利用如exomePeak等的软件程序，可检测出转录后的RNA修饰位点。
   \end{block}
 \end{frame}
 
@@ -238,7 +238,7 @@
   \begin{block}{Peak calling}
     Peak calling is a computational method used to identify areas in a genome that have been enriched with aligned reads as a consequence of performing a ChIP-sequencing or MeDIP-seq experiment. These areas are those where a protein interacts with DNA. When the protein is a transcription factor, the enriched area is its transcription factor binding site (TFBS). Popular software programs include MACS.\\
     \vspace{1em}
-    Peak calling may be conducted on transcriptome/exome as well to RNA epigenome sequencing data from MeRIPseq or m6Aseq for detection of post-transcriptional RNA modification sites with software programs, such as exomePeak. Many of the peak calling tools are optimised for only some kind of assays such as only for transcription-factor ChIP-seq or only for DNase-seq. However new generation of peak callers such as DFilter are based on generalised optimal theory of detection and has been shown to work for nearly all kinds for tag profile signals from next-gen sequencing data. It is also possible to do more complex analysis using such tools like combining multiple ChIP-seq signal to detect regulatory sites.
+    Peak calling may be conducted on transcriptome/exome as well to RNA epigenome sequencing data from MeRIPseq or m6Aseq for detection of post-transcriptional RNA modification sites with software programs, such as exomePeak. Many of the peak calling tools are optimised for only some kind of assays such as only for transcription-factor ChIP-seq or only for DNase-seq. However new generation of peak callers such as DFilter are based on generalised optimal theory of detection and has been shown to work for nearly all kinds for tag profile signals from next-generation sequencing data. It is also possible to do more complex analysis using such tools like combining multiple ChIP-seq signal to detect regulatory sites.
   \end{block}
   }
 \end{frame}
@@ -341,7 +341,7 @@
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq | 分析 | 工具}
   \begin{block}{HOMER}
-    HOMER (Hypergeometric Optimization of Motif EnRichment) is a suite of tools for Motif Discovery and next-gen sequencing analysis.  It is a collection of command line programs for unix-style operating systems written in Perl and C++. HOMER was primarily written as a de novo motif discovery algorithm and is well suited for finding 8-20 bp motifs in large scale genomics data.  HOMER contains many useful tools for analyzing ChIP-Seq, GRO-Seq, RNA-Seq, DNase-Seq, Hi-C and numerous other types of functional genomics sequencing data sets.
+    HOMER (Hypergeometric Optimization of Motif EnRichment) is a suite of tools for Motif Discovery and next-gen sequencing analysis.  It is a collection of command line programs for unix-style operating systems written in Perl and C++. HOMER was primarily written as a \textit{de novo} motif discovery algorithm and is well suited for finding 8-20 bp motifs in large scale genomics data.  HOMER contains many useful tools for analyzing ChIP-Seq, GRO-Seq, RNA-Seq, DNase-Seq, Hi-C and numerous other types of functional genomics sequencing data sets.
   \end{block}
 \end{frame}
 
@@ -380,32 +380,92 @@
 \subsubsection{应用实例}
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq | 实例}
+  {\footnotesize
+    \begin{block}{Nature Methods, 2007}
   STAT1 DNA association: ChIP-seq was used to study STAT1 targets in HeLA S3 cells. The performance of ChIP-seq was then compared to the alternative protein–DNA interaction methods of ChIP-PCR and ChIP-chip.\\
+  \vspace{0.5em}
   ChIP-seq offers an alternative to ChIP-chip. STAT1 experimental ChIP-seq data have a high degree of similarity to results obtained by ChIP-chip for the same type of experiment, with >64\% of peaks in shared genomic regions. Because the data are sequence reads, ChIP-seq offers a rapid analysis pipeline (as long as a high-quality genome sequence is available for read mapping, and the genome doesn't have repetitive content that confuses the mapping process) as well as the potential to detect mutations in binding-site sequences, which may directly support any observed changes in protein binding and gene regulation.\\
+  \vspace{0.5em}
   Robertson G et al.(2007) Genome-wide profiles of STAT1 DNA association using chromatin immunoprecipitation and massively parallel sequencing. Nature Methods 4: 651–657.
+    \end{block}
+}
 \end{frame}
 
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq | 实例}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c3.transcriptome/chipseq.example.01.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{顺反组 | ChIP-Seq | 实例}
+  \begin{block}{Cell, 2007}
   Nucleosome Architecture of Promoters: Using ChIP-seq, it was determined that Yeast genes seem to have a minimal nucleosome-free promoter region of 150bp in which RNA polymerase can initiate transcription.\\
+  \vspace{0.5em}
   Schmid et al. (2007) ChIP-Seq Data reveal nucleosome architecture of human promoters. Cell 131: 831–832
+  \end{block}
 \end{frame}
 
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq | 实例}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c3.transcriptome/chipseq.example.02.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{顺反组 | ChIP-Seq | 实例}
+  \begin{block}{Nature Genetics, 2010}
   Transcription factor conservation: ChIP-seq was used to compare conservation of TFs in the forebrain and heart tissue in embryonic mice. The authors identified and validated the heart functionality of transcription enhancers, and determined that transcription enhancers for the heart are less conserved than those for the forebrain during the same developmental stage.\\
+  \vspace{0.5em}
   Blow, M. J., McCulley, D. J., Li, Z., Zhang, T., Akiyama, J. A., Holt, A., Plajzer-Frick, I., Shoukry, M., Wright, C., Chen, F., Afzal, V., Bristow, J., Ren, B., Black, B. L., Rubin, E. M., Visel, A., \& Pennacchio, L. A. (2010). ChIP-seq identification of weakly conserved heart enhancers. Nature Genetics, 42, 806-810.
+  \end{block}
 \end{frame}
 
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq | 实例}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{c3.transcriptome/chipseq.example.03.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{顺反组 | ChIP-Seq | 实例}
+  {\footnotesize
+  \begin{block}{Genome Research, 2011}
   Genome-wide ChIP-seq: ChIP-sequencing was completed on the worm C. elegans to explore genome-wide binding sites of 22 transcription factors. Up to 20\% of the annotated candidate genes were assigned to transcription factors. Several transcription factors were assigned to non-coding RNA regions and may be subject to developmental or environmental variables. The functions of some of the transcription factors were also identified. Some of the transcription factors regulate genes that control other transcription factors. These genes are not regulated by other factors. Most transcription factors serve as both targets and regulators of other factors, demonstrating a network of regulation.\\
+  \vspace{0.5em}
   Niu, W., Lu, Z. J., Zhong, M., Sarov, M., Murray, J. I., Brdlik, C. M., Janette, J., Chen, C., Alves, P., Preston, E., Slightham, C., Jiang, L., Hyman, A. A., Kim. S. K., Waterston, R. H., Gerstein, M., Snyder, M., \& Reinke, V. (2011). Diverse transcription factor binding features revealed by genome-wide ChIP-seq in C. elegans. Genome Research, 21, 245-254.
+  \end{block}
+}
 \end{frame}
 
 \begin{frame}
   \frametitle{顺反组 | ChIP-Seq | 实例}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{c3.transcriptome/chipseq.example.04.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{顺反组 | ChIP-Seq | 实例}
+  \begin{block}{Nature Biotechnology, 2013}
   Inferring regulatory network: ChIP-seq signal of Histone modification were shown to be more correlated with transcription factor motifs at promoters in comparison to RNA level. Hence author proposed that using histone modification ChIP-seq would provide more reliable inference of gene-regulatory networks in comparison to other methods based on expression.\\
-  Vibhor Kumar, Masafumi Muratani, Nirmala Arul Rayan, Petra Kraus, Thomas Lufkin, Huck Hui Ng and Shyam Prabhakar, Uniform, optimal signal processing of mapped deep-sequencing data, Nature biotechnology, 2013
+  \vspace{0.5em}
+  Vibhor Kumar, Masafumi Muratani, Nirmala Arul Rayan, Petra Kraus, Thomas Lufkin, Huck Hui Ng and Shyam Prabhakar. Uniform, optimal signal processing of mapped deep-sequencing data. Nature biotechnology, 2013.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{顺反组 | ChIP-Seq | 实例}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{c3.transcriptome/chipseq.example.05.jpg}
+  \end{figure}
 \end{frame}
 
