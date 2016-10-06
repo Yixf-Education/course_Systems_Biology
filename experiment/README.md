@@ -33,14 +33,14 @@
 * [ChIP-Seq Analysis - exercise](http://bioinformatics.ucdavis.edu/docs/2014-december-workshop/Wednesday_NJ_Chip_Seq_Exercise.html)
 * [Aligning SE RNA-Seq Reads to a Reference Genome - exercises](http://bioinformatics.ucdavis.edu/docs/2014-december-workshop/Thursday_MB_Tophat_Model_SE.html)
 * [Aligning PE RNA-Seq Reads to a Genome - exercises](http://bioinformatics.ucdavis.edu/docs/2014-december-workshop/Thursday_MB_Tophat_PE.html)
-
 * [ChIP-Seq: quality filtering, read mapping and peak-calling](http://pedagogix-tagc.univ-mrs.fr/courses/ASG1/practicals/chip-seq/mapping_tutorial.html)
 * [ChIP-Seq Data Analysis using Galaxy](https://cgrlucb.wikispaces.com/ChIP-Seq+Data+Analysis+using+Galaxy)
-
 * [ChIP-seq exercises](https://usegalaxy.org/u/james/p/exercise-chip-seq)
 * [Galaxy Workflow 'ChIP-seq analysis (create BAM, bigWig and PeakCalling)'](https://usegalaxy.org/u/chip-seq-helin-group/w/mmusculus-mm10-create-bam-bigwig-and-peakcalling-for-chip-seq)
-
 * [RNA-seq Analysis Exercise](https://usegalaxy.org/u/jeremy/p/galaxy-rna-seq-analysis-exercise)
-
 * [Cam RNA-Seq Day 1](https://test.galaxyproject.org/u/galaxyproject/h/cam-rna-seq-day-1)
+* [Welcome to the June 2015 Workshop - Using the Linux Command-Line for Analysis of High Throughput Sequence Data](http://bioinformatics.ucdavis.edu/docs/2015-june-workshop/index.html)
+* [Welcome to the June 2016 Workshop - Using Galaxy for Analysis of RNA-Seq and ChIP-Seq Data](http://bioinformatics.ucdavis.edu/docs/2016-june-workshop/index.html)
+* [ESHG 3: Variant Calling](https://test.galaxyproject.org/u/galaxyproject/h/eshg-3-variant-calling-1)
+* [Data Library “Training”](https://test.galaxyproject.org/library_common/browse_library?show_deleted=False&cntrller=library&use_panels=False&id=d1d508fb296552d5)
 
