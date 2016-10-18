@@ -453,13 +453,19 @@ Prior to RNA-Seq, gene expression studies were done with hybridization-based mic
 
 \begin{frame}
   \frametitle{转录组学 | RNA-Seq | Databases}
+  {\footnotesize
   \begin{block}{ENCODE}
     ENCODE aimed to identify genome-wide regulatory regions in different cohort of cell lines and transcriptomic data are paramount in order to understand the downstream effect of those epigenetic and genetic regulatory layers.
+  \end{block}
+  \pause
+  \begin{block}{RNA Seq Atlas}
+    RNA-Seq Atlas is a web-based repository of RNA-Seq gene expression profiles and query tools. The website offers free and easy access to RNA-Seq gene expression profiles and tools to both compare tissues and find genes with specific expression patterns.
   \end{block}
   \pause
   \begin{block}{TCGA}
     TCGA aimed to collect and analyze thousands of patient's samples from 30 different tumor types in order to understand the underlying mechanisms of malignant transformation and progression.
   \end{block}
+}
 \end{frame}
 
 \begin{frame}
@@ -1091,7 +1097,7 @@ Prior to RNA-Seq, gene expression studies were done with hybridization-based mic
   \begin{block}{RNA-Seq Databases}
     \begin{itemize}
       \item ENCODE: Encyclopedia of DNA Elements
-      \item RNA-Seq Atlas: a reference database for gene expression profiling in normal tissue by next-generation sequencing.
+      \item RNA-Seq Atlas: A reference database for gene expression profiling in normal tissue by next-generation sequencing.
       \item SRA: The Sequence Read Archive (SRA) stores raw sequence data from ``next-generation" sequencing technologies including 454, IonTorrent, Illumina, SOLiD, Helicos and Complete Genomics. In addition to raw sequence data, SRA now stores alignment information in the form of read placements on a reference sequence.
     \end{itemize}
   \end{block}
@@ -1171,6 +1177,36 @@ Prior to RNA-Seq, gene expression studies were done with hybridization-based mic
   \pause
   \begin{block}{CummeRbund: visualization of RNA-Seq differential analysis}
     CummeRbund is an R package that is designed to aid and simplify the task of analyzing Cufflinks RNA-Seq output.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{转录组学 | RNA-Seq | 分析 | 工具 | Pipeline | \textcolor{red}{Tuxedo}}
+  \begin{block}{Cufflinks}
+    Cufflinks is both the name of a suite of tools and a program within that suite. Cufflinks the program assembles transcriptomes from RNA-Seq data and quantifies their expression.
+  \end{block}
+  \pause
+  \begin{block}{Cuffcompare}
+    Cuffcompare helps you compare the transcriptomes assembled from different RNA-Seq libraries and assess the quality of your assembly.
+  \end{block}
+  \pause
+  \begin{block}{Cuffmerge}
+    Cuffmerge merges the assembled transcriptomes into a master transcriptome. This step is required for a differential expression analysis of the new transcripts you’ve assembled. 
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{转录组学 | RNA-Seq | 分析 | 工具 | Pipeline | \textcolor{red}{Tuxedo}}
+  \begin{block}{Cuffquant}
+    Cuffquant computes the gene and transcript expression profiles and save these profiles to files that you can analyze later with Cuffdiff or Cuffnorm. It is recommended for analyses involving more than a handful of libraries.
+  \end{block}
+  \pause
+  \begin{block}{Cuffdiff}
+    Cuffdiff is a highly accurate tool for performing the comparisons of expression levels of genes and transcripts.
+  \end{block}
+  \pause
+  \begin{block}{Cuffnorm}
+    Cuffnorm normalizes a set of samples to be on as similar scales as possible, which can improve the results you obtain with other downstream tools.
   \end{block}
 \end{frame}
 
@@ -1346,7 +1382,7 @@ Prior to RNA-Seq, gene expression studies were done with hybridization-based mic
 \end{frame}
 
 \begin{frame}
-  \frametitle{转录组学 | RNA-Seq | 实例 | DEG}
+  \frametitle{转录组学 | RNA-Seq | 实例 | DGE}
   \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{c3.transcriptome/example.01.png}
