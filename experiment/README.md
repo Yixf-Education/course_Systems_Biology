@@ -2,7 +2,21 @@
 ## Data with workflow
 * [Manipulation of FASTQ data with Galaxy](http://hpc.ilri.cgiar.org/training/Glossina_annotation/Galaxy_Intro.html)
 
+
+
+---
+
+
+
 # Exome-Seq
+
+## Data
+
+* [Index of /~anton/share/mt.data](http://www.bx.psu.edu/~anton/share/mt.data/)
+
+
+* [Data Library “Mt Study 2014”](https://usegalaxy.org/library_common/browse_library?show_deleted=False&cntrller=library&use_panels=False&id=f11cf06cdcc13cfd)
+
 ## Workflow
 * [sahilseth/flowr](https://github.com/sahilseth/flowr/tree/master/inst/pipelines)
 * [Galaxy Workflow 'Exome Basics Analysis'](https://usegalaxy.org/workflow/display_by_username_and_slug?username=jeremy&slug=exome-basics-analysis)
@@ -13,9 +27,17 @@
 ### nkatiyar
 * [Galaxy_workshop](http://biocluster.ucr.edu/~nkatiyar/Galaxy_workshop/)
 * [Galaxy_workshop/Snpseq](http://biocluster.ucr.edu/~nkatiyar/Galaxy_workshop/Snpseq/)
+### NA12878
+
 * [ssadedin/variant_calling_pipeline](https://github.com/ssadedin/variant_calling_pipeline)
 ### Mother vs. child
 * [ESHG 3: Variant Calling](https://test.galaxyproject.org/u/galaxyproject/h/eshg-3-variant-calling-1)
+
+
+
+
+---
+
 
 
 # RNA-Seq
@@ -38,6 +60,12 @@
 * [Cam RNA-Seq Day 1](https://test.galaxyproject.org/u/galaxyproject/h/cam-rna-seq-day-1)
 
 
+
+
+---
+
+
+
 # ChIP-Seq
 ## Workflow
 * [ChIP-Seq Analysis - exercise](http://bioinformatics.ucdavis.edu/docs/2014-december-workshop/Wednesday_NJ_Chip_Seq_Exercise.html)
@@ -49,8 +77,15 @@
 * [ChIP-Seq Data Analysis using Galaxy](https://cgrlucb.wikispaces.com/ChIP-Seq+Data+Analysis+using+Galaxy)
 * [Introduction to ChIP-Seq](http://bioinformatics.sph.harvard.edu/ngs-workshops/courses/introduction-to-chip-seq/)
 * [Tanta Bic workshop Source history](https://usegalaxy.org/u/hanaa/h/source-history)
-### G1E_ER4 (CTCF vs. control)
+### G1E_ER4 (CTCF in G1E_ER4 vs. G1E)
+
 * [ChIP-seq exercises](https://usegalaxy.org/u/james/p/exercise-chip-seq)
+
+
+
+
+---
+
 
 
 # Others
@@ -63,6 +98,12 @@
 
 ## Data collections
 * [Data Library “Training”](https://test.galaxyproject.org/library_common/browse_library?show_deleted=False&cntrller=library&use_panels=False&id=d1d508fb296552d5)
+
+
+
+
+---
+
 
 
 # Bad links
