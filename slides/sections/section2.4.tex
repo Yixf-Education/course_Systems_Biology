@@ -1283,6 +1283,46 @@
   \end{figure}
 \end{frame}
 
+\begin{frame}
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工具安装}
+  \begin{block}{\alert{bioconda}}
+    Bioconda is a channel for the conda package manager specializing in bioinformatics software. Bioconda consists of:
+    \begin{itemize}
+      \item a repository of recipes hosted on GitHub
+      \item a build system that turns these recipes into conda packages
+      \item a repository of >1500 bioinformatics packages ready to use with conda install
+      \item Over 130 contributors that add, modify, update and maintain the recipes
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{基因组学 | NGS | 数据分析 | 流程 | 补遗 | 工具安装}
+  \begin{block}{Using bioconda}
+    bioconda supports only 64-bit Linux and Mac OSX.
+    \begin{enumerate}
+      \item Install conda
+      \item Set up channels (It is important to add them in this order)
+\vspace{-0.5em}
+\begin{lstlisting}
+conda config --add channels conda-forge
+conda config --add channels defaults
+conda config --add channels r
+conda config --add channels bioconda
+\end{lstlisting}
+\vspace{-0.8em}
+      \item Install packages
+\vspace{-0.5em}
+\begin{lstlisting}
+# install into the current conda environment:
+conda install bwa
+# a new environment can be created
+conda create -n aligners bwa bowtie
+\end{lstlisting}
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
 \subsection{补遗}
 \subsubsection{预处理}
 \begin{frame}
