@@ -1,0 +1,798 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Made with Remarkable!
+  </title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
+  <style type="text/css">
+   body,table tr{background-color:#fff}table tr td,table tr th{border:1px solid #ccc;text-align:left;padding:6px 13px;margin:0}pre code,table,table tr{padding:0}hr,pre code{background:0 0}body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;padding:10px 15px}strong,table tr th{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table tr{border-top:1px solid #ccc;margin:0}table tr:nth-child(2n){background-color:#aaa}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}blockquote{padding:0 15px;border-left:4px solid #ccc}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px}pre code{margin:0;white-space:pre;border:none}.highlight pre,pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}
+  </style>
+ </head>
+ <body>
+  <h1 id="_1">
+   实验一 测序数据的质量控制与预处理
+  </h1>
+  <h2 id="_2">
+   实验目的
+  </h2>
+  <ol>
+   <li>
+    掌握测序数据的FASTQ格式。
+   </li>
+   <li>
+    熟悉FastQC、FASTX-Toolkit等质量控制工具的使用方法。
+   </li>
+   <li>
+    熟悉Galaxy的使用方法。
+   </li>
+   <li>
+    了解FastQC输出结果的含义。
+   </li>
+  </ol>
+  <h2 id="_3">
+   实验材料
+  </h2>
+  <ol>
+   <li>
+    <a href="https://github.com/bioinformatics-core-shared-training/cruk-bioinf-sschool/blob/gh-pages/Day1/qa/sample.fastq">
+     sample.fastq
+    </a>
+   </li>
+   <li>
+    <a href="https://github.com/bioinformatics-core-shared-training/cruk-bioinf-sschool/blob/gh-pages/Day1/qa/sample2.fastq">
+     sample2.fastq
+    </a>
+   </li>
+  </ol>
+  <h2 id="_4">
+   实验工具
+  </h2>
+  <ol>
+   <li>
+    <a href="https://usegalaxy.org/">
+     Galaxy
+    </a>
+   </li>
+   <li>
+    <a href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/">
+     FastQC
+    </a>
+   </li>
+   <li>
+    <a href="http://hannonlab.cshl.edu/fastx_toolkit/">
+     FASTX-Toolkit
+    </a>
+   </li>
+  </ol>
+  <h2 id="_5">
+   实验步骤
+  </h2>
+  <ol>
+   <li>
+    Upload data to Galaxy
+    <ul>
+     <li>
+      工具：”Get data” —&gt; “Upload File”
+     </li>
+     <li>
+      数据：sample.fastq, sample2.fastq
+     </li>
+     <li>
+      注意：
+      <ul>
+       <li>
+        既可以通过链接获取数据，也可以直接上传本地数据（推荐前者）
+       </li>
+       <li>
+        选择正确的数据格式（提示：Fastq；sample.fastq: Illumina 1.5; sample2.fastq: Illumina 1.5）
+       </li>
+       <li>
+        因为基因组版本在本实验中无关紧要，所以随便选择一个即可（比如：hg19）
+       </li>
+      </ul>
+     </li>
+     <li>
+      思考：在实际的数据处理中，如何
+      <ul>
+       <li>
+        获取测序数据
+       </li>
+       <li>
+        拿到数据格式（Fastq的质量编码类型）
+       </li>
+       <li>
+        选择基因组版本
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    Checking read quality with FastQC
+    <ul>
+     <li>
+      工具：”NGS: QC and manipulation” —&gt; “FastQC”
+     </li>
+     <li>
+      数据：sample.fastq
+     </li>
+     <li>
+      注意：理解输出报告中每一部分结果的含义
+     </li>
+     <li>
+      思考：
+      <ul>
+       <li>
+        如何查找FastQC的使用说明？
+       </li>
+       <li>
+        “Basic Statistics”中的Encoding说明什么？
+       </li>
+       <li>
+        从”Per base sequence quality”中能得到什么信息？
+       </li>
+       <li>
+        从”Per base sequence content”中能得到什么信息？
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    Convert FASTQ quality to sanger
+    <ul>
+     <li>
+      工具：”NGS: QC and manipulation” —&gt; “FASTQ Groomer”
+     </li>
+     <li>
+      数据：sample.fastq
+     </li>
+     <li>
+      注意：指定正确的输入数据的质量编码类型（提示：Illumina 1.5）
+     </li>
+     <li>
+      思考：为什么首先要把Fastq的质量编码转换成Sanger，之后才进行后续的处理？
+     </li>
+    </ul>
+   </li>
+   <li>
+    Preprocessing with FASTX-Toolkit
+    <ol>
+     <li>
+      Remove reads with lower quality
+      <ul>
+       <li>
+        工具：”NGS: QC and manipulation” —&gt; “Filter by quality”
+       </li>
+       <li>
+        数据：sample_sanger.fastq
+       </li>
+       <li>
+        注意：设定正确的参数（要求：keeping only reads that have at least 75% of bases with a quality score of 20 or more）
+       </li>
+       <li>
+        思考：
+        <ul>
+         <li>
+          总的输入、最终输出、丢掉的reads数目各是多少？
+         </li>
+         <li>
+          在实际的数据处理中，如何选择
+          <strong>
+           合适
+          </strong>
+          的参数？
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li>
+      Trim the bases with sequence bias from reads
+      <ul>
+       <li>
+        工具：”NGS: QC and manipulation” —&gt; “Trim sequences”
+       </li>
+       <li>
+        数据：sample_sanger_filtered.fastq
+       </li>
+       <li>
+        注意：设定正确的参数
+        <ul>
+         <li>
+          参考FastQC输出报告中的”Per base sequence content”设定参数”First base to keep”
+         </li>
+         <li>
+          参考FastQC输出报告中的”Basic Statistics”或者”Sequence Length Distribution”设定参数”Last base to keep”
+         </li>
+        </ul>
+       </li>
+       <li>
+        思考：在实际的数据处理中，如何选择
+        <strong>
+         合适
+        </strong>
+        的参数？
+       </li>
+      </ul>
+     </li>
+    </ol>
+   </li>
+   <li>
+    Clean adapter containing reads from FASTQ data
+    <ol>
+     <li>
+      Checking read quality with FastQC
+      <ul>
+       <li>
+        工具：”NGS: QC and manipulation” —&gt; “FastQC”
+       </li>
+       <li>
+        数据：sample2.fastq
+       </li>
+       <li>
+        思考：
+        <ul>
+         <li>
+          “Basic Statistics”中的Encoding说明什么？
+         </li>
+         <li>
+          从”Overrepresented sequences”中能得到什么信息？
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li>
+      Convert FASTQ quality to sanger
+      <ul>
+       <li>
+        工具：”NGS: QC and manipulation” —&gt; “FASTQ Groomer”
+       </li>
+       <li>
+        数据：sample2.fastq
+       </li>
+       <li>
+        注意：指定正确的输入数据的质量编码类型（提示：Illumina 1.5）
+       </li>
+      </ul>
+     </li>
+     <li>
+      Clean adapter containing reads
+      <ul>
+       <li>
+        工具：”NGS: QC and manipulation” —&gt; “Trim Galore!”
+       </li>
+       <li>
+        数据：sample2_sanger.fastq
+       </li>
+       <li>
+        注意：设定正确的参数，要求如下
+        <ul>
+         <li>
+          Throw away processed reads shorter than 20 bases
+         </li>
+         <li>
+          The level of error tolerance is adjusted by specifying a maximum 10% error rate
+         </li>
+        </ul>
+       </li>
+       <li>
+        思考：
+        <ul>
+         <li>
+          如何指定adapter的序列？（提示：FastQC输出报告中的“Overrepresented sequences”）
+         </li>
+         <li>
+          总的输入、带有adapter的reads数目各是多少？
+         </li>
+         <li>
+          尝试使用”NGS: QC and manipulation” —&gt; “Clip”去除adapter，并比较两种工具的结果。
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li>
+      Checking read quality after cleaning adaper
+      <ul>
+       <li>
+        工具：”NGS: QC and manipulation” —&gt; “FastQC”
+       </li>
+       <li>
+        数据：sample2_sanger_trim.fastq
+       </li>
+       <li>
+        思考：
+        <ul>
+         <li>
+          比较去除adapter前后的FastQC输出报告。
+         </li>
+         <li>
+          不去除adapter的话对后续的处理有没有影响？
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ol>
+   </li>
+   <li>
+    探索”NGS: QC and manipulation”中的其他工具
+   </li>
+  </ol>
+  <h2 id="_6">
+   参考资料
+  </h2>
+  <ul>
+   <li>
+    <a href="http://www.bioinformatics.bbsrc.ac.uk/projects/fastqc/Help/">
+     FastQC Help
+    </a>
+   </li>
+   <li>
+    <a href="https://github.com/bioinformatics-core-shared-training/cruk-bioinf-sschool/blob/gh-pages/Day1/fastqc_sweave.pdf">
+     fastqc_sweave.pdf
+    </a>
+   </li>
+   <li>
+    <a href="https://github.com/bioinformatics-core-shared-training/cruk-bioinf-sschool/tree/gh-pages/Day1/qa/results">
+     QC results
+    </a>
+   </li>
+  </ul>
+  <hr/>
+  <h1 id="_7">
+   实验二 外显子组测序数据的处理
+  </h1>
+  <h2 id="_8">
+   实验目的
+  </h2>
+  <ol>
+   <li>
+    掌握外显子组测序数据的分析流程。
+   </li>
+   <li>
+    熟悉BWA、SAMtools、SnpEff等工具的使用方法。
+   </li>
+   <li>
+    熟悉Galaxy的使用方法。
+   </li>
+   <li>
+    了解存储变异信息的VCF格式。
+   </li>
+  </ol>
+  <h2 id="_9">
+   实验材料
+  </h2>
+  <ol>
+   <li>
+    NA8524_chr21.fq: human(hg19), fastqsanger
+   </li>
+  </ol>
+  <h2 id="_10">
+   实验工具
+  </h2>
+  <ol>
+   <li>
+    <a href="https://usegalaxy.org/">
+     Galaxy
+    </a>
+   </li>
+   <li>
+    <a href="http://bio-bwa.sourceforge.net/">
+     BWA
+    </a>
+   </li>
+   <li>
+    <a href="http://www.htslib.org/">
+     SAMtools
+    </a>
+   </li>
+   <li>
+    <a href="http://snpeff.sourceforge.net/">
+     SnpEff
+    </a>
+   </li>
+  </ol>
+  <h2 id="_11">
+   实验步骤
+  </h2>
+  <ol>
+   <li>
+    Upload data to Galaxy（略；参看实验一）
+   </li>
+   <li>
+    Checking read quality with FastQC（略；参看实验一）
+   </li>
+   <li>
+    Preprocessing（略；参看实验一）
+   </li>
+   <li>
+    Map with BWA
+    <ul>
+     <li>
+      工具：”NGS: Mapping” —&gt; “Map with BWA for Illumina”
+     </li>
+     <li>
+      数据：NA8524_chr21.fq
+     </li>
+     <li>
+      注意：指定合适的基因组组装版本
+     </li>
+     <li>
+      思考：尝试”Map with Bowtie for Illumina”、”Map with BWA”等工具
+     </li>
+    </ul>
+   </li>
+   <li>
+    Statistics with SAMtools
+    <ol>
+     <li>
+      Convert SAM to BAM
+      <ul>
+       <li>
+        工具：”NGS: SAMtools” —&gt; “SAM-to-BAM”
+       </li>
+      </ul>
+     </li>
+     <li>
+      Print descriptive information for a BAM dataset
+      <ul>
+       <li>
+        工具：”NGS: SAMtools” —&gt; “Flagstat”
+       </li>
+       <li>
+        思考：尝试”Stats”、”IdxStats”等质控工具
+       </li>
+      </ul>
+     </li>
+    </ol>
+   </li>
+   <li>
+    Call variants
+    <ol>
+     <li>
+      Call variants with MPileup
+      <ul>
+       <li>
+        工具：”NGS: SAMtools” —&gt; “MPileup”
+       </li>
+       <li>
+        注意：设定正确的参数
+        <ul>
+         <li>
+          选择和先前一致的基因组组装版本
+         </li>
+         <li>
+          设定参数”Genotype Likelihood Computation”为”Do not perform genotype likelihood computation (output pileup)”
+         </li>
+        </ul>
+       </li>
+       <li>
+        思考：尝试直接使用MPileup提取变异（跳过后面的Varscan）
+       </li>
+      </ul>
+     </li>
+     <li>
+      Variant detection with Varscan
+      <ul>
+       <li>
+        工具：”NGS: Variant Analysis” —&gt; “Varscan”
+       </li>
+       <li>
+        思考：尝试调整”Varscan”的参数
+       </li>
+      </ul>
+     </li>
+    </ol>
+   </li>
+   <li>
+    Annotate variants
+    <ul>
+     <li>
+      工具：”NGS: Variant Analysis” —&gt; “SnpEff”
+     </li>
+     <li>
+      注意：设定合适的参数
+     </li>
+     <li>
+      思考：尝试”ANNOVAR Annotate VCF”等其他注释工具
+      <ul>
+       <li>
+        提示：”ANNOVAR Annotate VCF”可能无法正常使用
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    Filter variants
+    <ul>
+     <li>
+      工具：”NGS: VCF Manipulation” —&gt; “VCFfilter”
+     </li>
+     <li>
+      注意：根据自己的需要构建表达式
+      <ul>
+       <li>
+        提示：”VCFfilter”可能无法正常使用
+       </li>
+      </ul>
+     </li>
+     <li>
+      思考：尝试使用”Text Manipulation”和”Filter and Sort”中的工具处理VCF
+     </li>
+    </ul>
+   </li>
+   <li>
+    补充：实际的数据处理过程中还需要对比对结果（BAM文件）和变异数据（VCF文件）进行以下处理
+    <ul>
+     <li>
+      Mark/Remove PCR Duplicates
+     </li>
+     <li>
+      Local Realignments Around Indels
+     </li>
+     <li>
+      Quality Recalibration
+     </li>
+    </ul>
+   </li>
+  </ol>
+  <h2 id="_12">
+   参考资料
+  </h2>
+  <ul>
+   <li>
+    <a href="https://usegalaxy.org/u/jeremy/w/exome-analysis">
+     Galaxy Workflow ‘Exome Analysis’
+    </a>
+   </li>
+  </ul>
+  <hr/>
+  <h1 id="rna-seq">
+   实验三 RNA-Seq的数据处理
+  </h1>
+  <h2 id="_13">
+   实验目的
+  </h2>
+  <ol>
+   <li>
+    掌握RNA-Seq测序数据的分析流程。
+   </li>
+   <li>
+    熟悉Tuxedo套件的使用方法。
+   </li>
+   <li>
+    熟悉Galaxy的使用方法。
+   </li>
+   <li>
+    了解存储注释信息的GTF/GFF格式。
+   </li>
+  </ol>
+  <h2 id="_14">
+   实验材料
+  </h2>
+  <ol>
+   <li>
+    <a href="http://hpc.ilri.cgiar.org/training/Glossina_annotation/RNA-Seq_files/h1-hESC_Sample_Dataset.fastqsanger">
+     h1-hESC_Sample_Dataset.fastqsanger
+    </a>
+    : human(hg19), fastqsanger
+   </li>
+   <li>
+    <a href="http://hpc.ilri.cgiar.org/training/Glossina_annotation/RNA-Seq_files/GM12878_Sample_Dataset.fastqsanger">
+     GM12878_Sample_Dataset.fastqsanger
+    </a>
+    : human(hg19), fastqsanger
+   </li>
+   <li>
+    <a href="http://hpc.ilri.cgiar.org/training/Glossina_annotation/RNA-Seq_files/UCSC_Main_on_Human__refGene_chr19_BED.bed">
+     UCSC_Main_on_Human__refGene_chr19_BED.bed
+    </a>
+   </li>
+   <li>
+    <a href="http://hpc.ilri.cgiar.org/training/Glossina_annotation/RNA-Seq_files/UCSC_Main_on_Human__refGene_chr19_GTF.gtf">
+     UCSC_Main_on_Human__refGene_chr19_GTF.gtf
+    </a>
+   </li>
+  </ol>
+  <h2 id="_15">
+   实验工具
+  </h2>
+  <ol>
+   <li>
+    <a href="https://usegalaxy.org/">
+     Galaxy
+    </a>
+   </li>
+   <li>
+    <a href="http://bowtie-bio.sourceforge.net/index.shtml">
+     Bowtie
+    </a>
+   </li>
+   <li>
+    <a href="https://ccb.jhu.edu/software/tophat/index.shtml">
+     TopHat
+    </a>
+   </li>
+   <li>
+    <a href="http://cole-trapnell-lab.github.io/cufflinks/">
+     Cufflinks
+    </a>
+   </li>
+  </ol>
+  <h2 id="_16">
+   实验步骤
+  </h2>
+  <ol>
+   <li>
+    Upload data to Galaxy（略；参看实验一）
+   </li>
+   <li>
+    Checking read quality with FastQC（略；参看实验一）
+    <ul>
+     <li>
+      思考：可以尝试”NGS: QC and manipulation”中的”FastQC”、”Build base quality distribution”、”Draw quality score boxplot”、”Compute quality statistics”、”FASTQ Summary Statistics”（结合”Graph/Display Data”中的”Boxplot”使用）等工具
+     </li>
+    </ul>
+   </li>
+   <li>
+    Preprocessing（略；参看实验一）
+    <ul>
+     <li>
+      思考
+      <ul>
+       <li>
+        标准：remove base positions that have a median quality score of below 15
+       </li>
+       <li>
+        Is trimming needed for the datasets?
+       </li>
+       <li>
+        If necessary, trim the reads! （可以尝试”NGS: QC and manipulation”中的”Trim Galore!”、”Trimmomatic”、”Trim sequences”、”FASTQ Trimmer”、”FASTQ Quality Trimmer”等工具）
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    Map reads with TopHat
+    <ul>
+     <li>
+      工具：”NGS: RNA Analysis” —&gt; “TopHat”
+     </li>
+     <li>
+      数据：*.fastq
+     </li>
+     <li>
+      注意：指定合适的基因组组装版本
+     </li>
+     <li>
+      思考
+      <ul>
+       <li>
+        可以尝试利用”UCSC_Main_on_Human__refGene_chr19_BED.bed”对TopHat的结果进行可视化
+       </li>
+       <li>
+        理解TopHat主要参数的含义
+       </li>
+       <li>
+        理解TopHat每个输出文件的含义
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    Assemble and analyze transcripts
+    <ul>
+     <li>
+      工具：”NGS: RNA Analysis” —&gt; “Cufflinks”
+     </li>
+     <li>
+      数据：accepted_hits.bam
+     </li>
+     <li>
+      注意：设置合适的参数（此处默认即可）
+      <ul>
+       <li>
+        理解Cufflinks主要参数的含义
+       </li>
+       <li>
+        理解Cufflinks每个输出文件的含义
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    Identify transcripts that are differentially expressed
+    <ol>
+     <li>
+      Compare assembled transcripts
+      <ul>
+       <li>
+        工具：”NGS: RNA Analysis” —&gt; “Cuffcompare”
+       </li>
+       <li>
+        数据：(assembled transcripts) X 2 + “UCSC_Main_on_Human__refGene_chr19_GTF.gtf”
+       </li>
+       <li>
+        注意：设置合适的参数
+        <ul>
+         <li>
+          理解Cuffcompare主要参数的含义
+         </li>
+         <li>
+          理解Cuffcompare每个输出文件的含义
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li>
+      Find significant changes in transcript expression
+      <ul>
+       <li>
+        工具：”NGS: RNA Analysis” —&gt; “Cuffdiff”
+       </li>
+       <li>
+        数据：combined transcripts + (accepted_hits.bam) X 2
+       </li>
+       <li>
+        注意：设置合适的参数
+        <ul>
+         <li>
+          指定“Condition Name”
+         </li>
+         <li>
+          理解Cuffdiff主要参数的含义
+         </li>
+         <li>
+          理解Cuffdiff每个输出文件的含义
+         </li>
+        </ul>
+       </li>
+       <li>
+        思考：分别从”transcript differential expression testing”和”gene differential expression testing”中提取显著差异表达的转录本和基因
+       </li>
+      </ul>
+     </li>
+    </ol>
+   </li>
+   <li>
+    Visualization with CummeRbund（略）
+   </li>
+  </ol>
+  <h2 id="_17">
+   参考资料
+  </h2>
+  <ul>
+   <li>
+    <a href="http://hpc.ilri.cgiar.org/training/Glossina_annotation/RNA-Seq.html">
+     RNA-Seq using Galaxy
+    </a>
+   </li>
+   <li>
+    <a href="http://hpc.ilri.cgiar.org/training/Glossina_annotation/RNA-Seq_files/">
+     /training/Glossina_annotation/RNA-Seq_files
+    </a>
+   </li>
+  </ul>
+  <hr/>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   MathJax.Hub.Config({"showProcessingMessages" : false,"messageStyle" : "none","tex2jax": { inlineMath: [ [ "$", "$" ] ] }});
+  </script>
+ </body>
+</html>

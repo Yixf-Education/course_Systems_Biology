@@ -21,7 +21,7 @@
 	* 数据：sample.fastq, sample2.fastq
 	* 注意：
 		- 既可以通过链接获取数据，也可以直接上传本地数据（推荐前者）
-		- 选择正确的数据格式（提示：Fastq；sample.fastq: Illumina 1.5; sample.fastq: Illumina 1.9）
+		- 选择正确的数据格式（提示：Fastq；sample.fastq: Illumina 1.5; sample2.fastq: Illumina 1.5）
 		- 因为基因组版本在本实验中无关紧要，所以随便选择一个即可（比如：hg19）
 	* 思考：在实际的数据处理中，如何
 		- 获取测序数据
@@ -36,7 +36,7 @@
 		- "Basic Statistics"中的Encoding说明什么？
 		- 从"Per base sequence quality"中能得到什么信息？
 		- 从"Per base sequence content"中能得到什么信息？
-3. Convert  FASTQ quality to sanger
+3. Convert FASTQ quality to sanger
 	* 工具："NGS: QC and manipulation" ---> "FASTQ Groomer"
 	* 数据：sample.fastq
 	* 注意：指定正确的输入数据的质量编码类型（提示：Illumina 1.5）
@@ -63,9 +63,13 @@
 		* 思考：
 			- "Basic Statistics"中的Encoding说明什么？
 			- 从"Overrepresented sequences"中能得到什么信息？
-	2. Clean adapter containing reads
-		* 工具："NGS: QC and manipulation" ---> "Trim Galore!"
+	2. Convert FASTQ quality to sanger
+		* 工具："NGS: QC and manipulation" ---> "FASTQ Groomer"
 		* 数据：sample2.fastq
+		* 注意：指定正确的输入数据的质量编码类型（提示：Illumina 1.5）
+	3. Clean adapter containing reads
+		* 工具："NGS: QC and manipulation" ---> "Trim Galore!"
+		* 数据：sample2_sanger.fastq
 		* 注意：设定正确的参数，要求如下
 			- Throw away processed reads shorter than 20 bases
 			- The level of error tolerance is adjusted by specifying a maximum 10% error rate
@@ -75,7 +79,7 @@
 			- 尝试使用"NGS: QC and manipulation" ---> "Clip"去除adapter，并比较两种工具的结果。
 	3. Checking read quality after cleaning adaper
 		* 工具："NGS: QC and manipulation" ---> "FastQC"
-		* 数据：sample2_trim.fastq
+		* 数据：sample2_sanger_trim.fastq
 		* 思考：
 			- 比较去除adapter前后的FastQC输出报告。
 			- 不去除adapter的话对后续的处理有没有影响？
