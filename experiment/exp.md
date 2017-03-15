@@ -90,7 +90,8 @@
 * [fastqc_sweave.pdf](https://github.com/bioinformatics-core-shared-training/cruk-bioinf-sschool/blob/gh-pages/Day1/fastqc_sweave.pdf)
 * [QC results](https://github.com/bioinformatics-core-shared-training/cruk-bioinf-sschool/tree/gh-pages/Day1/qa/results)
 
-
+## 备注
+* 除了Main public site上的[Galaxy](https://usegalaxy.org/)以外，还可以尝试使用其他Public servers，比如[Erasmus MC Bioinformatics Galaxy Server](https://bioinf-galaxian.erasmusmc.nl/galaxy/)等。
 
 ---
 
@@ -160,7 +161,8 @@
 ## 参考资料
 * [Galaxy Workflow 'Exome Analysis'](https://usegalaxy.org/u/jeremy/w/exome-analysis)
 
-
+## 备注
+* 除了Main public site上的[Galaxy](https://usegalaxy.org/)以外，还可以尝试使用其他Public servers，比如[Erasmus MC Bioinformatics Galaxy Server](https://bioinf-galaxian.erasmusmc.nl/galaxy/)等。
 
 ---
 
@@ -230,7 +232,8 @@
 * [RNA-Seq using Galaxy](http://hpc.ilri.cgiar.org/training/Glossina_annotation/RNA-Seq.html)
 * [/training/Glossina_annotation/RNA-Seq_files](http://hpc.ilri.cgiar.org/training/Glossina_annotation/RNA-Seq_files/)
 
-
+## 备注
+* 除了Main public site上的[Galaxy](https://usegalaxy.org/)以外，还可以尝试使用其他Public servers，比如[Erasmus MC Bioinformatics Galaxy Server](https://bioinf-galaxian.erasmusmc.nl/galaxy/)等。
 
 ---
 
