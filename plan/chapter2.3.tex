@@ -127,7 +127,7 @@
         \end{itemize}
       \item 数据格式
         \begin{enumerate}
-\parpic[fr]{\includegraphics[width=8cm]{c2.format.list.02.png}}
+\parpic[fr]{\includegraphics[width=8cm]{c2_format_list_02.png}}
           \item 简介
             \begin{itemize}
               \item 序列与读段：FASTA、2bit，FASTQ
@@ -139,13 +139,13 @@
             \vspace{-0.5em}
             \begin{figure}[h]
               \centering
-              \includegraphics[width=0.45\textwidth]{c2.format.fasta.01.jpg}
+              \includegraphics[width=0.45\textwidth]{c2_format_fasta_01.jpg}
               \quad
-              \includegraphics[width=0.45\textwidth]{c2.format.fastq.01.png}
+              \includegraphics[width=0.45\textwidth]{c2_format_fastq_01.png}
             \end{figure}
             \begin{itemize}
             \vspace{-0.5em}
-\parpic[fr]{\includegraphics[width=8cm]{c2.format.fastq.qual.06.png}}
+\parpic[fr]{\includegraphics[width=8cm]{c2_format_fastq_qual_06.png}}
               \item FASTQ = FASTA + PHRED (quality score)
               \item 常用后缀：.fq, .fastq
               \item ID：/1和/2$\Rightarrow$PE
@@ -153,9 +153,9 @@
             \vspace{-0.5em}
             \begin{figure}[h]
               \centering
-              \includegraphics[width=0.4\textwidth]{c2.format.fastq.qual.04.png}
+              \includegraphics[width=0.4\textwidth]{c2_format_fastq_qual_04.png}
               \quad
-              \includegraphics[width=0.55\textwidth]{c2.format.sam.32.png}
+              \includegraphics[width=0.55\textwidth]{c2_format_sam_32.png}
             \end{figure}
             \vspace{-0.5em}
             \end{itemize}
@@ -166,7 +166,7 @@
             \end{itemize}
           \item \textcolor{red}{【重点】}注释格式：BED和GTF/GFF
             \begin{itemize}
-\parpic[fr]{\includegraphics[width=8cm]{c2.format.bed.10.png}}
+\parpic[fr]{\includegraphics[width=8cm]{c2_format_bed_10.png}}
               \item BED$\Rightarrow$bigBed, bedGraph
               \item GTF: GFF2.5, Gene Transfer Format
               \item GFF: GFF3, General Feature Format
@@ -185,22 +185,22 @@
             \vspace{-0.5em}
             \begin{figure}[h]
               \centering
-              \includegraphics[width=0.5\textwidth]{c2.format.gtf.gff.03.png}
+              \includegraphics[width=0.5\textwidth]{c2_format_gtf_gff_03.png}
               \quad
-              \includegraphics[width=0.45\textwidth]{c2.format.vcf.06.png}
+              \includegraphics[width=0.45\textwidth]{c2_format_vcf_06.png}
             \end{figure}
             \vspace{-0.5em}
         \end{enumerate}
     \end{enumerate}
 
-\parpic[fr]{\includegraphics[width=8cm]{c2.term.insert.size.01.png}}
+\parpic[fr]{\includegraphics[width=8cm]{c2_term_insert_size_01.png}}
   \item 测序数据分析（40分钟）
     \begin{enumerate}
       \item 常见术语
         \begin{itemize}
           \item 深度：测序得到的总碱基数与待测基因组大小的比值
           \item 覆盖度：测序获得的序列占整个基因组的比例
-\parpic[fr]{\includegraphics[width=8cm]{c2.term.insert.size.02.png}}
+\parpic[fr]{\includegraphics[width=8cm]{c2_term_insert_size_02.png}}
           \item SE(single end) vs.PE(paired end)
           \item PE: insert vs. inner mate distance
         \end{itemize}
@@ -208,16 +208,16 @@
             \vspace{-0.5em}
             \begin{figure}[h]
               \centering
-              \includegraphics[width=0.4\textwidth]{c2.workflow.ngs.03.png}
+              \includegraphics[width=0.4\textwidth]{c2_workflow_ngs_03.png}
               \quad
-              \includegraphics[width=0.5\textwidth]{c2.workflow.ngs.04.png}
+              \includegraphics[width=0.5\textwidth]{c2_workflow_ngs_04.png}
             \end{figure}
             \vspace{-0.5em}
             \begin{enumerate}
               \item Quality Control: FastQC, NGS QC Toolkit, SolexaQA
               \item Preprocessing(trim \& filter): FASTX-Toolkit, PRINSEQ
               \item Mapping: BWA, Bowtie, SOAP
-\parpic[fr]{\includegraphics[width=7.5cm]{c2.tool.alignment.04.png}}
+\parpic[fr]{\includegraphics[width=7.5cm]{c2_tool_alignment_04.png}}
               \item Calling Variants: Samtools, GATK, VarScan
               \item Variant Annotation: SnpEff, ANNOVAR, SeattleSeq Annotation, SIFT, PolyPhen-2
               \item Visualization: Genome Browser, IGV, Tablet, Circos
@@ -238,7 +238,7 @@
 
   \item 外显子组测序（20分钟）
     \begin{enumerate}
-\parpic[fr]{\includegraphics[width=9.5cm]{c2.exome.exp.bx.01.jpg}}
+\parpic[fr]{\includegraphics[width=9.5cm]{c2_exome_exp_bx_01.jpg}}
       \item 基本概念
         \begin{itemize}
           \item exome：genome $\Rightarrow$ 1\%，30Mb
