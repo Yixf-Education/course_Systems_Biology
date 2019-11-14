@@ -1,4 +1,4 @@
-# course_System_Biology —— 《系统生物学》课程资料
+# course_Systems_Biology —— 《系统生物学》课程资料
 
 ## 简介
 * 学校：天津医科大学
