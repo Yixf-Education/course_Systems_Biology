@@ -6,4 +6,5 @@
 * [不要把归一化和标准化混为一谈](https://www.jianshu.com/p/ba2a64a81c81?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=weixin_timeline&from=singlemessage&isappinstalled=0)
 * [Introduction to DGE](https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html)
 * [Differential gene expression workshop](https://github.com/hbctraining/DGE_workshop)
+* [RNAseq 分析如何选择参考基因组和 gtf](https://mp.weixin.qq.com/s?src=11&timestamp=1574208816&ver=1985&signature=LANWFHbJO5eTMtATKfip5eAaVgKhCPkiUxFMHbVP6Nb1gWR7DpFXSXPXNRn8Zy8J5JNk0a5uI-BrC6A8F0cXWajEyVn8Y6SlzrQsO3agi*HkVAlcBonvAKIwK6PXTlFh&new=1)
 
