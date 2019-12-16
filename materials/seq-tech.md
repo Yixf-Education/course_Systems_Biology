@@ -1,0 +1,1 @@
+* [一、二、三、四代测序技术原理详解](https://mp.weixin.qq.com/s?__biz=MzI2NjU0NTMzOA==&mid=2247483798&idx=1&sn=235f5b99114886b25901fa419d17d1f5&chksm=ea8d3043ddfab95574b1d5f8d4a2ddc9f4133dbf72c8535fa239748d52a0c36d87343a62cc6b&mpshare=1&scene=1&srcid=&sharer_sharetime=1576400846089&sharer_shareid=49bb68e4d4ad9f65af077f4e54025da0#rd)
