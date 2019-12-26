@@ -7,4 +7,5 @@
 * [Introduction to DGE](https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html)
 * [Differential gene expression workshop](https://github.com/hbctraining/DGE_workshop)
 * [RNAseq 分析如何选择参考基因组和 gtf](https://mp.weixin.qq.com/s?src=11&timestamp=1574208816&ver=1985&signature=LANWFHbJO5eTMtATKfip5eAaVgKhCPkiUxFMHbVP6Nb1gWR7DpFXSXPXNRn8Zy8J5JNk0a5uI-BrC6A8F0cXWajEyVn8Y6SlzrQsO3agi*HkVAlcBonvAKIwK6PXTlFh&new=1)
+* [Volcano plot | 别再问我这为什么是火山图](https://mp.weixin.qq.com/s?__biz=MzI5MTcwNjA4NQ==&mid=2247490875&idx=1&sn=df67321b5e131900a163b689ff55c25c&chksm=ec0dd8b1db7a51a783828239a7b65dc6c492df82400019a44007e66c06fe96cd35d3e6d8d0b0&mpshare=1&scene=1&srcid=&sharer_sharetime=1577243334687&sharer_shareid=49bb68e4d4ad9f65af077f4e54025da0#rd)
 
