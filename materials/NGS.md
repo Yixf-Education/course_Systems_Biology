@@ -9,4 +9,8 @@
 * [RNAseq 分析如何选择参考基因组和 gtf](https://mp.weixin.qq.com/s?src=11&timestamp=1574208816&ver=1985&signature=LANWFHbJO5eTMtATKfip5eAaVgKhCPkiUxFMHbVP6Nb1gWR7DpFXSXPXNRn8Zy8J5JNk0a5uI-BrC6A8F0cXWajEyVn8Y6SlzrQsO3agi*HkVAlcBonvAKIwK6PXTlFh&new=1)
 * [Volcano plot | 别再问我这为什么是火山图](https://mp.weixin.qq.com/s?__biz=MzI5MTcwNjA4NQ==&mid=2247490875&idx=1&sn=df67321b5e131900a163b689ff55c25c&chksm=ec0dd8b1db7a51a783828239a7b65dc6c492df82400019a44007e66c06fe96cd35d3e6d8d0b0&mpshare=1&scene=1&srcid=&sharer_sharetime=1577243334687&sharer_shareid=49bb68e4d4ad9f65af077f4e54025da0#rd)
 * [NGS 系列文章 - 高通量测序原理](https://mp.weixin.qq.com/s?__biz=MzI5MTcwNjA4NQ==&mid=2247491455&idx=1&sn=d4fb468c36c56f98eddd6bfa021651f0&chksm=ec0ddaf5db7a53e352053fa913b1eb031c2c4412093a2db78f9f4ae290078c0d397a0c3ca3d4&mpshare=1&scene=1&srcid=&sharer_sharetime=1581727039556&sharer_shareid=49bb68e4d4ad9f65af077f4e54025da0#rd)
+* [生信分析过程中这些常见文件的格式以及查看方式你都知道吗？](https://mp.weixin.qq.com/s?__biz=MzI5MTcwNjA4NQ==&mid=2247491549&idx=2&sn=58621db4d87df30496232d59b830104d&chksm=ec0dda57db7a5341a82a5b3b3a05f1db5996ae1e24bd23bcb6948d3aa1bb6fb24b8de129ef7c&mpshare=1&scene=1&srcid=&sharer_sharetime=1581813409529&sharer_shareid=49bb68e4d4ad9f65af077f4e54025da0#rd)
+* [NGS 基础 - FASTQ 格式解释和质量评估](https://mp.weixin.qq.com/s?__biz=MzI5MTcwNjA4NQ==&mid=2247484047&idx=1&sn=3e2a79d9f56040a57ac2e16cf1923b54&scene=21#wechat_redirect)
+* [NGS 基础 - GTF/GFF 文件格式解读和转换](https://mp.weixin.qq.com/s?__biz=MzI5MTcwNjA4NQ==&mid=2247484166&idx=1&sn=417e155672bd718def86003b16bf0078&scene=21#wechat_redirect)
+* [NGS 基础 - 参考基因组和基因注释文件](https://mp.weixin.qq.com/s?__biz=MzI5MTcwNjA4NQ==&mid=2247484148&idx=1&sn=525233898721a9c3ebdf275babf14944&scene=21#wechat_redirect)
 
