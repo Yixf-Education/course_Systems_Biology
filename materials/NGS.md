@@ -46,3 +46,4 @@
 * [Sam/Bam文件格式详解](https://mp.weixin.qq.com/s/Uy8tPGR-b6GiWCHYZfTPXw)
 * [生信分析过程中这些常见文件的格式以及查看方式你都知道吗？](https://mp.weixin.qq.com/s/udnHlbTYvsp_xrhh5aYA9Q)
 * [lncRNA组装流程的软件介绍之FastQC](https://mp.weixin.qq.com/s/uHgomjswlwuzF4ES47K09A)
+* [ChIP-seq数据分析课程学习笔记之背景知识](https://mp.weixin.qq.com/s/r0SLPZUz5HeOHNJpY6-xvw)
