@@ -49,6 +49,7 @@
 * [ChIP-seq数据分析课程学习笔记之背景知识](https://mp.weixin.qq.com/s/r0SLPZUz5HeOHNJpY6-xvw)
 * [外显子和基因组基本概念(一)](https://mp.weixin.qq.com/s/0S6gGeD6M_n1cBhGqjGlWA)
 * [入门ATAC-seq，你需要知道什么？](https://mp.weixin.qq.com/s/txb22VjztZhCiEyKMI6GAw)
+* [CHIP-Seq的10问10答](https://mp.weixin.qq.com/s/rtZcBNBuZ5lwpmPEKOf6JQ)
 
 
 
