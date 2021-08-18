@@ -50,6 +50,7 @@
 * [外显子和基因组基本概念(一)](https://mp.weixin.qq.com/s/0S6gGeD6M_n1cBhGqjGlWA)
 * [入门ATAC-seq，你需要知道什么？](https://mp.weixin.qq.com/s/txb22VjztZhCiEyKMI6GAw)
 * [CHIP-Seq的10问10答](https://mp.weixin.qq.com/s/rtZcBNBuZ5lwpmPEKOf6JQ)
+* [RNA-Seq中链特异性文库是什么？](https://mp.weixin.qq.com/s/WH8jUBojvbadQerhc0MToA)
 
 
 
