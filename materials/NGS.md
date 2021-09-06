@@ -53,6 +53,7 @@
 * [RNA-Seq中链特异性文库是什么？](https://mp.weixin.qq.com/s/WH8jUBojvbadQerhc0MToA)
 * [图说转录组——啥也别说，你要的都在图里了！](https://mp.weixin.qq.com/s/IR0odgY7XodLpu4YOU65lA)
 * [转录组分析的正确姿势你了解了吗？](https://mp.weixin.qq.com/s/hZgeq9aYyVrJNnPh5gUSzQ)
+* [m6A、ATAC等表观文章中的peak可视化图形如何实现？](https://mp.weixin.qq.com/s/AYfTzoYpaaIEGWLUBO14Pw)
 
 
 
