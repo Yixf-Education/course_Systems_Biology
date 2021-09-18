@@ -54,6 +54,7 @@
 * [图说转录组——啥也别说，你要的都在图里了！](https://mp.weixin.qq.com/s/IR0odgY7XodLpu4YOU65lA)
 * [转录组分析的正确姿势你了解了吗？](https://mp.weixin.qq.com/s/hZgeq9aYyVrJNnPh5gUSzQ)
 * [m6A、ATAC等表观文章中的peak可视化图形如何实现？](https://mp.weixin.qq.com/s/AYfTzoYpaaIEGWLUBO14Pw)
+* [国际千人基因组计划数据库怎么用起来？](https://mp.weixin.qq.com/s/PTIfU1X8BliSX8ZjdBJIhQ)
 
 
 
