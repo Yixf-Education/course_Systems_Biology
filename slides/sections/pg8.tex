@@ -33,7 +33,7 @@ RNA-seq (RNA sequencing), also called whole transcriptome shotgun sequencing (WT
 \begin{frame}
   \frametitle{转录组学 | RNA-Seq | Method | Transcriptome assembly}
   \begin{block}{\textcolor{red}{Two methods}}
-    Two different assembly methods are used for producing a transcriptome from raw sequence reads: genome-guided and \textit{de-novo}. 
+    Two different assembly methods are used for producing a transcriptome from raw sequence reads: genome-guided and \textit{de-novo}.
   \end{block}
   \begin{figure}
     \centering
@@ -338,6 +338,23 @@ RNA-seq (RNA sequencing), also called whole transcriptome shotgun sequencing (WT
 \end{frame}
 
 \begin{frame}
+  \frametitle{转录组学 | RNA-Seq | 分析 | 流程 | 补遗 | ST}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{c3_transcriptome/st_01.png}
+    \includegraphics[width=0.85\textwidth]{c3_transcriptome/st_02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{转录组学 | RNA-Seq | 分析 | 流程 | 补遗 | Bulk vs. SC vs. ST}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{c3_transcriptome/bulk_sc_st_01.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
   \frametitle{转录组学 | RNA-Seq | 分析 | 流程 | 补遗 | Stranded}
   \begin{figure}
     \centering
@@ -479,7 +496,7 @@ RNA-seq (RNA sequencing), also called whole transcriptome shotgun sequencing (WT
       \item FPKM (Fragments Per Kilobase Million)
       \item TPM (Transcripts Per Kilobase Million)
     \end{itemize}
-        These three metrics attempt to normalize for sequencing depth and gene length. 
+        These three metrics attempt to normalize for sequencing depth and gene length.
   \end{block}
 \end{frame}
 
@@ -498,7 +515,7 @@ RNA-seq (RNA sequencing), also called whole transcriptome shotgun sequencing (WT
 \begin{frame}
   \frametitle{转录组学 | RNA-Seq | 分析 | 术语 | 总结}
   \begin{block}{FPKM}
- FPKM is very similar to RPKM. RPKM was made for single-end RNA-seq, where every read corresponded to a single fragment that was sequenced. FPKM was made for paired-end RNA-seq. With paired-end RNA-seq, two reads can correspond to a single fragment, or, if one read in the pair did not map, one read can correspond to a single fragment. The only difference between RPKM and FPKM is that FPKM takes into account that two reads can map to one fragment (and so it doesn't count this fragment twice). 
+ FPKM is very similar to RPKM. RPKM was made for single-end RNA-seq, where every read corresponded to a single fragment that was sequenced. FPKM was made for paired-end RNA-seq. With paired-end RNA-seq, two reads can correspond to a single fragment, or, if one read in the pair did not map, one read can correspond to a single fragment. The only difference between RPKM and FPKM is that FPKM takes into account that two reads can map to one fragment (and so it doesn't count this fragment twice).
   \end{block}
 \end{frame}
 
@@ -681,7 +698,7 @@ The RNACocktail pipeline is composed of a high-accuracy tools for different step
     \begin{itemize}
       \item ngs.plot: Quick mining and visualization of next-generation sequencing data by integrating genomic databases. It allows to easily visualize NGS samples at functional genomic regions.
       \item GBrowse: GBrowse is a combination of database and interactive web pages for manipulating and displaying annotations on genomes.
-      \item IGB: The Integrated Genome Browser (IGB, pronounced ig-bee) is an application intended for visualization and exploration of genomes and corresponding annotations from multiple data sources. 
+      \item IGB: The Integrated Genome Browser (IGB, pronounced ig-bee) is an application intended for visualization and exploration of genomes and corresponding annotations from multiple data sources.
       \item IGV: The Integrative Genomics Viewer (IGV) is a high-performance visualization tool for interactive exploration of large, integrated genomic datasets.
       \item SeqMonk: SeqMonk is a program to enable the visualisation and analysis of mapped sequence data. It was written for use with mapped next generation sequence data but can in theory be used for any dataset which can be expressed as a series of genomic positions.
       \item Tablet: Tablet is a lightweight, high-performance graphical viewer for next generation sequence assemblies and alignments.
@@ -782,7 +799,7 @@ The RNACocktail pipeline is composed of a high-accuracy tools for different step
   \end{block}
   \pause
   \begin{block}{Cuffmerge}
-    Cuffmerge merges the assembled transcriptomes into a master transcriptome. This step is required for a differential expression analysis of the new transcripts you've assembled. 
+    Cuffmerge merges the assembled transcriptomes into a master transcriptome. This step is required for a differential expression analysis of the new transcripts you've assembled.
   \end{block}
 \end{frame}
 
@@ -951,7 +968,7 @@ The RNACocktail pipeline is composed of a high-accuracy tools for different step
   \begin{block}{PLoS ONE, 2010}
   As an example of clinical applications, researchers at the Mayo Clinic used an RNA-Seq approach to identify differentially expressed transcripts between oral cancer and normal tissue samples. They also accurately evaluated the allelic imbalance (AI), ratio of the transcripts produced by the single alleles, within a subgroup of genes involved in cell differentiation, adhesion, cell motility and muscle contraction identifying a unique transcriptomic and genomic signature in oral cancer patients.\\
   \vspace{0.5em}
- Tuch BB, Laborde RR, Xu X, et al. (2010). ``Tumor transcriptome sequencing reveals allelic expression imbalances associated with copy number alterations". PLoS ONE. 5 (2): e9317. 
+ Tuch BB, Laborde RR, Xu X, et al. (2010). ``Tumor transcriptome sequencing reveals allelic expression imbalances associated with copy number alterations". PLoS ONE. 5 (2): e9317.
   \end{block}
 \end{frame}
 
@@ -968,7 +985,7 @@ The RNACocktail pipeline is composed of a high-accuracy tools for different step
   \begin{block}{Genome Research, 2010}
    Novel insight on skin cancer (melanoma) also come from RNA-Seq of melanoma patients. This approach led to the identification of eleven novel gene fusion transcripts originated from previously unknown chromosomal rearrangements. Twelve novel chimeric transcripts were also reported, including seven of those that confirmed previously identified data in multiple melanoma samples.\\
    \vspace{0.5em}
-Berger MF, Levin JZ, Vijayendran K, et al. (April 2010). ``Integrative analysis of the melanoma transcriptome". Genome Res. 20 (4): 413–27. 
+Berger MF, Levin JZ, Vijayendran K, et al. (April 2010). ``Integrative analysis of the melanoma transcriptome". Genome Res. 20 (4): 413–27.
   \end{block}
 \end{frame}
 
@@ -985,7 +1002,7 @@ Berger MF, Levin JZ, Vijayendran K, et al. (April 2010). ``Integrative analysis 
   \begin{block}{PLoS ONE, 2011}
   RNA-Seq has been used to study other important chronic diseases such as Alzheimer (AD) and diabetes. In the former case, Twine and colleagues compared the transcriptome of different lobes of deceased AD's patient's brain with the brain of healthy individuals identifying a lower number of splice variants in AD's patients and differential promoter usage of the APOE-001 and -002 isoforms in AD's brains.\\
   \vspace{0.5em}
-Twine NA, Janitz K, Wilkins MR, Janitz M (2011). ``Whole transcriptome sequencing reveals gene expression and splicing differences in brain regions affected by Alzheimer's disease". PLoS ONE. 6 (1): e16266. 
+Twine NA, Janitz K, Wilkins MR, Janitz M (2011). ``Whole transcriptome sequencing reveals gene expression and splicing differences in brain regions affected by Alzheimer's disease". PLoS ONE. 6 (1): e16266.
   \end{block}
 \end{frame}
 
@@ -1004,7 +1021,7 @@ Twine NA, Janitz K, Wilkins MR, Janitz M (2011). ``Whole transcriptome sequencin
   \vspace{0.5em}
   Ku GM, Kim H, Vaughn IW, et al. (October 2012). "Research resource: RNA-Seq reveals unique features of the pancreatic β-cell transcriptome". Mol. Endocrinol. 26 (10): 1783–92.\\
   \vspace{0.5em}
-  Morán I, Akerman I, van de Bunt M, et al. (October 2012). ``Human β cell transcriptome analysis uncovers lncRNAs that are tissue-specific, dynamically regulated, and abnormally expressed in type 2 diabetes". Cell Metab. 16 (4): 435–48. 
+  Morán I, Akerman I, van de Bunt M, et al. (October 2012). ``Human β cell transcriptome analysis uncovers lncRNAs that are tissue-specific, dynamically regulated, and abnormally expressed in type 2 diabetes". Cell Metab. 16 (4): 435–48.
   \end{block}
 \end{frame}
 
@@ -1029,7 +1046,7 @@ Twine NA, Janitz K, Wilkins MR, Janitz M (2011). ``Whole transcriptome sequencin
   \begin{block}{PLoS ONE, 2013}
   NGS technology identified several previously undocumented differentially-expressed transcripts in rats treated with AFB1, a potent hepatocarcinogen. Nearly 50 new differentially-expressed transcriptions were identified between the controls and AFB1-treated rats. Additionally potential new exons were identified, including some that are responsive to AFB1. The next-generation sequencing pipeline identified more differential gene expressions compared with microarrays, particularly when DESeq software was utilized. Cufflinks identified two novel transcripts that were not previously annotated in the Ensembl database; these transcripts were confirmed using cloning PCR.\\
   \vspace{0.5em}
-Merrick B. A.; Phadke D. P.; Auerbach S. S.; Mav D.; Stiegelmeyer S. M.; Shah R. R.; Tice R. R. (2013). ``RNA-seq profiling reveals novel hepatic gene expression pattern in Aflatoxin B1 treated rats". PLoS ONE. 8: e61768. 
+Merrick B. A.; Phadke D. P.; Auerbach S. S.; Mav D.; Stiegelmeyer S. M.; Shah R. R.; Tice R. R. (2013). ``RNA-seq profiling reveals novel hepatic gene expression pattern in Aflatoxin B1 treated rats". PLoS ONE. 8: e61768.
   \end{block}
 \end{frame}
 
@@ -1046,7 +1063,7 @@ Merrick B. A.; Phadke D. P.; Auerbach S. S.; Mav D.; Stiegelmeyer S. M.; Shah R.
   \begin{block}{PLoS ONE, 2011}
   Han et al. (2011) examined microRNA expression differences in bladder cancer patients in order to understand how changes and dysregulation in microRNA can influence mRNA expression and function. Several microRNAs were differentially expressed in the bladder cancer patients. Upregulation in the aberrant microRNAs was more common than downregulation in the cancer patients. One of the upregulated microRNAs, has-miR-96, has been associated with carcinogenesis, and several of the overexpressed microRNAs have also been observed in other cancers, including ovarian and cervical. Some of the downregulated microRNAs in cancer samples were hypothesized to have inhibitory roles.\\
   \vspace{0.5em}
-Han Y.; Chen J.; Zhao X.; Liang C.; Wang Y.; Sun L.; Jiang Z.; Zhang Z.; Yang R.; Chen J.; Li Z.; Tang A.; Li X.; Ye J.; Guan Z.; Gui Y.; Cai Z. (2011). ``MicroRNA expression signatures of bladder cancer revealed by deep sequencing". PLoS ONE. 6: e18286. 
+Han Y.; Chen J.; Zhao X.; Liang C.; Wang Y.; Sun L.; Jiang Z.; Zhang Z.; Yang R.; Chen J.; Li Z.; Tang A.; Li X.; Ye J.; Guan Z.; Gui Y.; Cai Z. (2011). ``MicroRNA expression signatures of bladder cancer revealed by deep sequencing". PLoS ONE. 6: e18286.
   \end{block}
 \end{frame}
 
