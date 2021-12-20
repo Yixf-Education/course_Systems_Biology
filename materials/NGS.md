@@ -55,6 +55,7 @@
 * [转录组分析的正确姿势你了解了吗？](https://mp.weixin.qq.com/s/hZgeq9aYyVrJNnPh5gUSzQ)
 * [m6A、ATAC等表观文章中的peak可视化图形如何实现？](https://mp.weixin.qq.com/s/AYfTzoYpaaIEGWLUBO14Pw)
 * [国际千人基因组计划数据库怎么用起来？](https://mp.weixin.qq.com/s/PTIfU1X8BliSX8ZjdBJIhQ)
+* [基因组浏览器 IGV 的安装和图形解读](https://mp.weixin.qq.com/s/k_NDmywEkaB9-iUivhf6ow)
 
 
 
