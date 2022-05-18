@@ -59,6 +59,7 @@
 * [ATAC-Seq（染色体可及性测序）](https://mp.weixin.qq.com/s/d1cLnWf2kFuelv1MUzQuDg)
 * [以 Counts 转 TPM 为例，感受一下生信自学中阳性对照的重要性](https://mp.weixin.qq.com/s/imJ5za173pKFJVad5j_5iw)
 * [Differential gene expression (DGE) analysis | Training-modules](https://hbctraining.github.io/Training-modules/planning_successful_rnaseq/lessons/sample_level_QC.html)
+* [Counts FPKM RPKM TPM CPM 的转化](https://mp.weixin.qq.com/s/IUV9dSbRBK1nvetixKOCRw)
 
 
 
